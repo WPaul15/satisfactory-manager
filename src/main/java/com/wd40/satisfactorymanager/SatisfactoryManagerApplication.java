@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SatisfactorymanagerApplication {
+public class SatisfactoryManagerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SatisfactorymanagerApplication.class, args);
+		SpringApplication.run(SatisfactoryManagerApplication.class, args);
 	}
 
 }
