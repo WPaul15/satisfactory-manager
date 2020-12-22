@@ -9,5 +9,4 @@ public class SatisfactoryManagerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SatisfactoryManagerApplication.class, args);
 	}
-
 }
