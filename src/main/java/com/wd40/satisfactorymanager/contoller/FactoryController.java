@@ -3,11 +3,13 @@ package com.wd40.satisfactorymanager.contoller;
 import com.wd40.satisfactorymanager.model.Factory;
 import com.wd40.satisfactorymanager.service.FactoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -27,6 +29,7 @@ public class FactoryController {
 	}
 
 	@PostMapping(path = "/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
+	@ResponseStatus(HttpStatus.CREATED)
 	public Factory createNewFactory(@PathVariable("name") String name) {
 		return factoryService.createNewFactory(name);
 	}
