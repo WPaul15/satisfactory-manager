@@ -4,11 +4,14 @@ import com.wd40.satisfactorymanager.model.Factory;
 import com.wd40.satisfactorymanager.service.FactoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/factory")
 public class FactoryController {
 
 	private final FactoryService factoryService;
@@ -18,10 +21,12 @@ public class FactoryController {
 		this.factoryService = factoryService;
 	}
 
-	@PostMapping(
-		path = "/factory/{name}",
-		produces = MediaType.APPLICATION_JSON_VALUE
-	)
+	@GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public Factory getFactoryById(@PathVariable Integer id) {
+		return factoryService.getFactoryById(id);
+	}
+
+	@PostMapping(path = "/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public Factory createNewFactory(@PathVariable("name") String name) {
 		return factoryService.createNewFactory(name);
 	}

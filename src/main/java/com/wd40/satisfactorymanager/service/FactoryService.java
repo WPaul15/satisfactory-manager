@@ -15,6 +15,10 @@ public class FactoryService {
 		this.factoryRepository = factoryRepository;
 	}
 
+	public Factory getFactoryById(Integer id) {
+		return factoryRepository.findById(id).orElseThrow();
+	}
+
 	public Factory createNewFactory(String name) {
 		return factoryRepository.save(new Factory(name));
 	}

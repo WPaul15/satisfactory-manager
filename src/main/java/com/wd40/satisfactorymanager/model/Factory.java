@@ -20,6 +20,8 @@ public class Factory {
 	@ElementCollection
 	private List<Machine> machines;
 
+	public Factory() {}
+
 	public Factory(String name) {
 		this.name = name;
 		this.machines = new ArrayList<>();

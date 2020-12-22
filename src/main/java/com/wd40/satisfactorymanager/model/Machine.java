@@ -17,6 +17,8 @@ public class Machine {
 	// TODO: Add recipes
 	private String recipe;
 
+	public Machine() {}
+
 	public int getCount() {
 		return count;
 	}
