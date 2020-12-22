@@ -1,0 +1,4 @@
+server:
+  servlet:
+    # Prefix all endpoints with /api
+    context-path: /api
