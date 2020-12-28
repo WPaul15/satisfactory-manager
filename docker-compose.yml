@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  satisfactory-manager:
+    container_name: satisfactory-manager
+    build:
+      context: .
+    ports:
+    - 8080:8080
