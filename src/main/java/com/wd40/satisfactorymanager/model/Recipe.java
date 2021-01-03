@@ -24,6 +24,10 @@ public class Recipe {
 
 	public Recipe() {}
 
+	public Integer getId() {
+		return id;
+	}
+
 	public String getName() {
 		return name;
 	}
