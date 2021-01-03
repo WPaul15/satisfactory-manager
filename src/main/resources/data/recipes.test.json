@@ -2,19 +2,31 @@
   {
     "name": "Test Recipe",
     "inputs": [
-      "Test Input"
+      {
+        "name": "Test Input",
+        "amount": 60
+      }
     ],
     "outputs": [
-      "Test Output"
+      {
+        "name": "Test Output",
+        "amount": 20
+      }
     ]
   },
   {
     "name": "Test Recipe 2",
     "inputs": [
-      "Test Input 2"
+      {
+        "name": "Test Input 2",
+        "amount": 40
+      }
     ],
     "outputs": [
-      "Test Output 2"
+      {
+        "name": "Test Output 2",
+        "amount": 30
+      }
     ]
   }
 ]

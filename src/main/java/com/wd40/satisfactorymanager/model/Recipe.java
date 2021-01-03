@@ -1,11 +1,12 @@
 package com.wd40.satisfactorymanager.model;
 
-import java.util.List;
-import javax.persistence.ElementCollection;
+import java.util.Set;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Recipe {
@@ -16,11 +17,11 @@ public class Recipe {
 
 	private String name;
 
-	@ElementCollection
-	private List<String> inputs;
+	@OneToMany(cascade = CascadeType.ALL)
+	private Set<Ingredient> inputs;
 
-	@ElementCollection
-	private List<String> outputs;
+	@OneToMany(cascade = CascadeType.ALL)
+	private Set<Ingredient> outputs;
 
 	public Recipe() {}
 
@@ -36,19 +37,19 @@ public class Recipe {
 		this.name = name;
 	}
 
-	public List<String> getInputs() {
+	public Set<Ingredient> getInputs() {
 		return inputs;
 	}
 
-	public void setInputs(List<String> inputs) {
+	public void setInputs(Set<Ingredient> inputs) {
 		this.inputs = inputs;
 	}
 
-	public List<String> getOutputs() {
+	public Set<Ingredient> getOutputs() {
 		return outputs;
 	}
 
-	public void setOutputs(List<String> outputs) {
+	public void setOutputs(Set<Ingredient> outputs) {
 		this.outputs = outputs;
 	}
 }
