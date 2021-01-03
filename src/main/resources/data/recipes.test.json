@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Test Recipe",
+    "inputs": [
+      "Test Input"
+    ],
+    "outputs": [
+      "Test Output"
+    ]
+  },
+  {
+    "name": "Test Recipe 2",
+    "inputs": [
+      "Test Input 2"
+    ],
+    "outputs": [
+      "Test Output 2"
+    ]
+  }
+]
