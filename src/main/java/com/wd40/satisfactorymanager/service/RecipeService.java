@@ -42,8 +42,11 @@ public class RecipeService {
 		recipeRepository.saveAll(recipes);
 	}
 
-	@Bean("recipes")
-	public List<Recipe> getRecipes() {
-		return recipes;
+	public Recipe getRecipeById(Integer id) {
+		return recipeRepository.findById(id).orElseThrow();
+	}
+
+	public Recipe getRecipeByName(String name) {
+		return recipeRepository.findByName(name).orElseThrow();
 	}
 }

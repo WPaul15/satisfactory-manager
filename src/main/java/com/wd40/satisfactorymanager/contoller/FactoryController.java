@@ -1,7 +1,9 @@
 package com.wd40.satisfactorymanager.contoller;
 
 import com.wd40.satisfactorymanager.model.Factory;
+import com.wd40.satisfactorymanager.model.Recipe;
 import com.wd40.satisfactorymanager.service.FactoryService;
+import com.wd40.satisfactorymanager.service.RecipeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -17,10 +19,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class FactoryController {
 
 	private final FactoryService factoryService;
+	private final RecipeService recipeService;
 
 	@Autowired
-	public FactoryController(FactoryService factoryService) {
+	public FactoryController(FactoryService factoryService, RecipeService recipeService) {
 		this.factoryService = factoryService;
+		this.recipeService = recipeService;
 	}
 
 	@GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -32,5 +36,10 @@ public class FactoryController {
 	@ResponseStatus(HttpStatus.CREATED)
 	public Factory createNewFactory(@PathVariable("name") String name) {
 		return factoryService.createNewFactory(name);
+	}
+
+	@GetMapping(path = "/recipe/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public Recipe getRecipeById(@PathVariable("name") String name) {
+		return recipeService.getRecipeByName(name);
 	}
 }

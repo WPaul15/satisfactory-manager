@@ -1,0 +1,2266 @@
+{
+  "none": [
+    {
+      "name": "Alien Carapace",
+      "products": [
+        {
+          "name": "Alien Carapace",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "alc"
+    },
+    {
+      "name": "Alien Organs",
+      "products": [
+        {
+          "name": "Alien Organs",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "alo"
+    },
+    {
+      "name": "Biomass",
+      "products": [
+        {
+          "name": "Biomass",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "bio"
+    },
+    {
+      "name": "Flower Petals",
+      "products": [
+        {
+          "name": "Flower Petals",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "flp"
+    },
+    {
+      "name": "Green Power Slug",
+      "products": [
+        {
+          "name": "Green power Slug",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "gps"
+    },
+    {
+      "name": "Heavy Oil Residue",
+      "products": [
+        {
+          "name": "Heavy Oil Residue",
+          "amount": 1,
+          "type": "fluid"
+        }
+      ],
+      "ingredients": [],
+      "key": "hor"
+    },
+    {
+      "name": "Leaves",
+      "products": [
+        {
+          "name": "Leaves",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "lea"
+    },
+    {
+      "name": "Mycelia",
+      "products": [
+        {
+          "name": "Mycelia",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "myc"
+    },
+    {
+      "name": "Polymer Resin",
+      "products": [
+        {
+          "name": "Polymer Resin",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "pmr"
+    },
+    {
+      "name": "Purple Power Slug",
+      "products": [
+        {
+          "name": "Purple Power Slug",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "pps"
+    },
+    {
+      "name": "Yellow Power Slug",
+      "products": [
+        {
+          "name": "Yellow Power Slug",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "yps"
+    },
+    {
+      "name": "Wood",
+      "products": [
+        {
+          "name": "Wood",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "woo"
+    }
+  ],
+  "miner": [
+    {
+      "name": "Bauxite",
+      "products": [
+        {
+          "name": "Bauxite",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "bax"
+    },
+    {
+      "name": "Caterium Ore",
+      "products": [
+        {
+          "name": "Caterium Ore",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "cat"
+    },
+    {
+      "name": "Coal",
+      "products": [
+        {
+          "name": "Coal",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "col"
+    },
+    {
+      "name": "Copper Ore",
+      "products": [
+        {
+          "name": "Copper Ore",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "cpr"
+    },
+    {
+      "name": "Iron Ore",
+      "products": [
+        {
+          "name": "Iron Ore",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "irn"
+    },
+    {
+      "name": "Limestone",
+      "products": [
+        {
+          "name": "Limestone",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "lms"
+    },
+    {
+      "name": "Raw Quartz",
+      "products": [
+        {
+          "name": "Raw Quartz",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "raq"
+    },
+    {
+      "name": "Sulfur",
+      "products": [
+        {
+          "name": "Sulfur",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "sul"
+    },
+    {
+      "name": "Uranium",
+      "products": [
+        {
+          "name": "Uranium",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [],
+      "key": "ura"
+    }
+  ],
+  "water_extractor": [
+    {
+      "name": "Water",
+      "products": [
+        {
+          "name": "Water",
+          "amount": 120,
+          "type": "fluid"
+        }
+      ],
+      "ingredients": [],
+      "key": "wat"
+    }
+  ],
+  "oil_extractor": [
+    {
+      "name": "Crude Oil",
+      "products": [
+        {
+          "name": "Crude Oil",
+          "amount": 120,
+          "type": "fluid"
+        }
+      ],
+      "ingredients": [],
+      "key": "oil"
+    }
+  ],
+  "smelter": [
+    {
+      "name": "Caterium Ingot",
+      "products": [
+        {
+          "name": "Caterium Ingot",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Caterium Ore",
+          "amount": 45,
+          "type": "solid"
+        }
+      ],
+      "key": "cti"
+    },
+    {
+      "name": "Copper Ingot",
+      "products": [
+        {
+          "name": "Copper Ingot",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Copper Ore",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "key": "cui"
+    },
+    {
+      "name": "Iron Ingot",
+      "products": [
+        {
+          "name": "Iron Ingot",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Iron Ore",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "key": "iri"
+    }
+  ],
+  "foundry": [
+    {
+      "name": "Aluminum Ingot",
+      "products": [
+        {
+          "name": "Aluminum Ingot",
+          "amount": 80,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Aluminum Scrap",
+          "amount": 240,
+          "type": "solid"
+        },
+        {
+          "name": "Silica",
+          "amount": 140,
+          "type": "solid"
+        }
+      ],
+      "key": "ali"
+    },
+    {
+      "name": "Steel Ingot",
+      "products": [
+        {
+          "name": "Steel Ingot",
+          "amount": 45,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Iron Ore",
+          "amount": 45,
+          "type": "solid"
+        },
+        {
+          "name": "Coal",
+          "amount": 45,
+          "type": "solid"
+        }
+      ],
+      "key": "sti"
+    }
+  ],
+  "constructor": [
+    {
+      "name": "Biomass (Alien Carapace)",
+      "products": [
+        {
+          "name": "Biomass",
+          "amount": 1500,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Alien Carapace",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "key": "bac"
+    },
+    {
+      "name": "Biomass (Alien Organs)",
+      "products": [
+        {
+          "name": "Biomass",
+          "amount": 1500,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Alien Organs",
+          "amount": 7.5,
+          "type": "solid"
+        }
+      ],
+      "key": "bao"
+    },
+    {
+      "name": "Biomass (Leaves)",
+      "products": [
+        {
+          "name": "Biomass",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Leaves",
+          "amount": 120,
+          "type": "solid"
+        }
+      ],
+      "key": "ble"
+    },
+    {
+      "name": "Biomass (Mycelia)",
+      "products": [
+        {
+          "name": "Biomass",
+          "amount": 150,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Mycelia",
+          "amount": 150,
+          "type": "solid"
+        }
+      ],
+      "key": "bmy"
+    },
+    {
+      "name": "Biomass (Wood)",
+      "products": [
+        {
+          "name": "Biomass",
+          "amount": 300,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Wood",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "key": "bwo"
+    },
+    {
+      "name": "Cable",
+      "products": [
+        {
+          "name": "Cable",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Wire",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "key": "cab"
+    },
+    {
+      "name": "Color Cartridge",
+      "products": [
+        {
+          "name": "Color Cartridge",
+          "amount": 75,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Flower Petals",
+          "amount": 37.5,
+          "type": "solid"
+        }
+      ],
+      "key": "clc"
+    },
+    {
+      "name": "Concrete",
+      "products": [
+        {
+          "name": "Concrete",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Limestone",
+          "amount": 45,
+          "type": "solid"
+        }
+      ],
+      "key": "con"
+    },
+    {
+      "name": "Copper Sheet",
+      "products": [
+        {
+          "name": "Copper Sheet",
+          "amount": 10,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Copper Ingot",
+          "amount": 20,
+          "type": "solid"
+        }
+      ],
+      "key": "cps"
+    },
+    {
+      "name": "Empty Canister",
+      "products": [
+        {
+          "name": "Empty Canister",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Plastic",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "key": "emc"
+    },
+    {
+      "name": "Iron Plate",
+      "products": [
+        {
+          "name": "Iron Plate",
+          "amount": 20,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Iron Ingot",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "key": "irp"
+    },
+    {
+      "name": "Iron Rod",
+      "products": [
+        {
+          "name": "Iron Rod",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Iron Ingot",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "key": "irr"
+    },
+    {
+      "name": "Power Shard (1)",
+      "products": [
+        {
+          "name": "Power Shard",
+          "amount": 7.5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Green Power Slug",
+          "amount": 7.5,
+          "type": "solid"
+        }
+      ],
+      "key": "ps1"
+    },
+    {
+      "name": "Power Shard (2)",
+      "products": [
+        {
+          "name": "Power Shard",
+          "amount": 10,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Yellow Power Slug",
+          "amount": 5,
+          "type": "solid"
+        }
+      ],
+      "key": "ps2"
+    },
+    {
+      "name": "Power Shard (5)",
+      "products": [
+        {
+          "name": "Power Shard",
+          "amount": 12.5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Purple Power Slug",
+          "amount": 2.5,
+          "type": "solid"
+        }
+      ],
+      "key": "ps5"
+    },
+    {
+      "name": "Quartz Crystal",
+      "products": [
+        {
+          "name": "Quartz Crystal",
+          "amount": 22.5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Raw Quartz",
+          "amount": 37.5,
+          "type": "solid"
+        }
+      ],
+      "key": "quc"
+    },
+    {
+      "name": "Quickwire",
+      "products": [
+        {
+          "name": "Quickwire",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Caterium Ingot",
+          "amount": 12,
+          "type": "solid"
+        }
+      ],
+      "key": "quw"
+    },
+    {
+      "name": "Screw",
+      "products": [
+        {
+          "name": "Screw",
+          "amount": 40,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Iron Rod",
+          "amount": 10,
+          "type": "solid"
+        }
+      ],
+      "key": "scr"
+    },
+    {
+      "name": "Silica",
+      "products": [
+        {
+          "name": "Silica",
+          "amount": 37.5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Raw Quartz",
+          "amount": 22.5,
+          "type": "solid"
+        }
+      ],
+      "key": "sil"
+    },
+    {
+      "name": "Solid Biofuel",
+      "products": [
+        {
+          "name": "Solid Biofuel",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Biomass",
+          "amount": 120,
+          "type": "solid"
+        }
+      ],
+      "key": "sbf"
+    },
+    {
+      "name": "Spiked Rebar",
+      "products": [
+        {
+          "name": "Spiked Rebar",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Iron Rod",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "key": "spr"
+    },
+    {
+      "name": "Steel Beam",
+      "products": [
+        {
+          "name": "Steel Beam",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Steel Ingot",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "key": "stb"
+    },
+    {
+      "name": "Steel Pipe",
+      "products": [
+        {
+          "name": "Steel Pipe",
+          "amount": 20,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Steel Ingot",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "key": "stp"
+    },
+    {
+      "name": "Wire",
+      "products": [
+        {
+          "name": "Wire",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Copper Ingot",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "key": "wir"
+    }
+  ],
+  "assembler": [
+    {
+      "name": "A.I. Limiter",
+      "products": [
+        {
+          "name": "A.I. Limiter",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Circuit Board",
+          "amount": 2,
+          "type": "solid"
+        },
+        {
+          "name": "Quickwire",
+          "amount": 18,
+          "type": "solid"
+        }
+      ],
+      "key": "ail"
+    },
+    {
+      "name": "Alclad Aluminum Sheet",
+      "products": [
+        {
+          "name": "Alclad Aluminum Sheet",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Aluminum Ingot",
+          "amount": 60,
+          "type": "solid"
+        },
+        {
+          "name": "Copper Ingot",
+          "amount": 22.5,
+          "type": "solid"
+        }
+      ],
+      "key": "aas"
+    },
+    {
+      "name": "Automated Wiring",
+      "products": [
+        {
+          "name": "Automated Wiring",
+          "amount": 2.5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Stator",
+          "amount": 2.5,
+          "type": "solid"
+        },
+        {
+          "name": "Cable",
+          "amount": 50,
+          "type": "solid"
+        }
+      ],
+      "key": "auw"
+    },
+    {
+      "name": "Black Powder",
+      "products": [
+        {
+          "name": "Black Powder",
+          "amount": 7.5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Coal",
+          "amount": 7.5,
+          "type": "solid"
+        },
+        {
+          "name": "Sulfur",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "key": "blp"
+    },
+    {
+      "name": "Circuit Board",
+      "products": [
+        {
+          "name": "Circuit Board",
+          "amount": 7.5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Copper Sheet",
+          "amount": 15,
+          "type": "solid"
+        },
+        {
+          "name": "Plastic",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "key": "cib"
+    },
+    {
+      "name": "Electromagnetic Control Rod",
+      "products": [
+        {
+          "name": "Electromagnetic Control Rod",
+          "amount": 4,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Stator",
+          "amount": 6,
+          "type": "solid"
+        },
+        {
+          "name": "A.I. Limiter",
+          "amount": 4,
+          "type": "solid"
+        }
+      ],
+      "key": "ecr"
+    },
+    {
+      "name": "Encased Industrial Beam",
+      "products": [
+        {
+          "name": "Encased Industrial Beam",
+          "amount": 6,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Steel Beam",
+          "amount": 24,
+          "type": "solid"
+        },
+        {
+          "name": "Concrete",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "key": "eib"
+    },
+    {
+      "name": "Encased Uranium Cell",
+      "products": [
+        {
+          "name": "Encased Uranium Cell",
+          "amount": 10,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Uranium Pellet",
+          "amount": 40,
+          "type": "solid"
+        },
+        {
+          "name": "Concrete",
+          "amount": 9,
+          "type": "solid"
+        }
+      ],
+      "key": "euc"
+    },
+    {
+      "name": "Fabric",
+      "products": [
+        {
+          "name": "Fabric",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Mycelia",
+          "amount": 15,
+          "type": "solid"
+        },
+        {
+          "name": "Biomass",
+          "amount": 75,
+          "type": "solid"
+        }
+      ],
+      "key": "fab"
+    },
+    {
+      "name": "Heat Sink",
+      "products": [
+        {
+          "name": "Heat Sink",
+          "amount": 10,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Alclad Aluminum Sheet",
+          "amount": 40,
+          "type": "solid"
+        },
+        {
+          "name": "Rubber",
+          "amount": 70,
+          "type": "solid"
+        }
+      ],
+      "key": "hes"
+    },
+    {
+      "name": "Modular Frame",
+      "products": [
+        {
+          "name": "Modular Frame",
+          "amount": 2,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Reinforced Iron Plate",
+          "amount": 3,
+          "type": "solid"
+        },
+        {
+          "name": "Iron Rod",
+          "amount": 12,
+          "type": "solid"
+        }
+      ],
+      "key": "mof"
+    },
+    {
+      "name": "Motor",
+      "products": [
+        {
+          "name": "Motor",
+          "amount": 5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Rotor",
+          "amount": 10,
+          "type": "solid"
+        },
+        {
+          "name": "Stator",
+          "amount": 10,
+          "type": "solid"
+        }
+      ],
+      "key": "mot"
+    },
+    {
+      "name": "Nobelisk",
+      "products": [
+        {
+          "name": "Nobelisk",
+          "amount": 3,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Black Powder",
+          "amount": 15,
+          "type": "solid"
+        },
+        {
+          "name": "Steel Pipe",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "key": "nob"
+    },
+    {
+      "name": "Reinforced Iron Plate",
+      "products": [
+        {
+          "name": "Reinforced Iron Plate",
+          "amount": 5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Iron Plate",
+          "amount": 30,
+          "type": "solid"
+        },
+        {
+          "name": "Screw",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "key": "rip"
+    },
+    {
+      "name": "Rotor",
+      "products": [
+        {
+          "name": "Rotor",
+          "amount": 4,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Iron Rod",
+          "amount": 20,
+          "type": "solid"
+        },
+        {
+          "name": "Screw",
+          "amount": 100,
+          "type": "solid"
+        }
+      ],
+      "key": "rot"
+    },
+    {
+      "name": "Smart Plating",
+      "products": [
+        {
+          "name": "Smart Plating",
+          "amount": 2,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Reinforced Iron Plate",
+          "amount": 2,
+          "type": "solid"
+        },
+        {
+          "name": "Rotor",
+          "amount": 2,
+          "type": "solid"
+        }
+      ],
+      "key": "smp"
+    },
+    {
+      "name": "Stator",
+      "products": [
+        {
+          "name": "Stator",
+          "amount": 5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Steel Pipe",
+          "amount": 15,
+          "type": "solid"
+        },
+        {
+          "name": "Wire",
+          "amount": 40,
+          "type": "solid"
+        }
+      ],
+      "key": "sta"
+    },
+    {
+      "name": "Versatile Framework",
+      "products": [
+        {
+          "name": "Versatile Framework",
+          "amount": 5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Modular Frame",
+          "amount": 2.5,
+          "type": "solid"
+        },
+        {
+          "name": "Steel Beam",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "key": "vfw"
+    }
+  ],
+  "manufacturer": [
+    {
+      "name": "Adaptive Control Unit",
+      "products": [
+        {
+          "name": "Adaptive Control Unit",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Automated Wiring",
+          "amount": 7.5,
+          "type": "solid"
+        },
+        {
+          "name": "Circuit Board",
+          "amount": 5,
+          "type": "solid"
+        },
+        {
+          "name": "Heavy Modular Frame",
+          "amount": 1,
+          "type": "solid"
+        },
+        {
+          "name": "Computer",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "key": "acu"
+    },
+    {
+      "name": "Battery",
+      "products": [
+        {
+          "name": "Battery",
+          "amount": 5.625,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Alclad Aluminum Sheet",
+          "amount": 15,
+          "type": "solid"
+        },
+        {
+          "name": "Wire",
+          "amount": 30,
+          "type": "solid"
+        },
+        {
+          "name": "Sulfur",
+          "amount": 37.5,
+          "type": "solid"
+        },
+        {
+          "name": "Plastic",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "key": "bat"
+    },
+    {
+      "name": "Beacon",
+      "products": [
+        {
+          "name": "Beacon",
+          "amount": 7.5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Iron Plate",
+          "amount": 22.5,
+          "type": "solid"
+        },
+        {
+          "name": "Iron Rod",
+          "amount": 7.5,
+          "type": "solid"
+        },
+        {
+          "name": "Wire",
+          "amount": 112.5,
+          "type": "solid"
+        },
+        {
+          "name": "Cable",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "key": "bea"
+    },
+    {
+      "name": "Computer",
+      "products": [
+        {
+          "name": "Computer",
+          "amount": 2.5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Circuit Board",
+          "amount": 25,
+          "type": "solid"
+        },
+        {
+          "name": "Cable",
+          "amount": 22.5,
+          "type": "solid"
+        },
+        {
+          "name": "Plastic",
+          "amount": 45,
+          "type": "solid"
+        },
+        {
+          "name": "Screw",
+          "amount": 130,
+          "type": "solid"
+        }
+      ],
+      "key": "com"
+    },
+    {
+      "name": "Crystal Oscillator",
+      "products": [
+        {
+          "name": "Crystal Oscillator",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Quartz Crystal",
+          "amount": 18,
+          "type": "solid"
+        },
+        {
+          "name": "Cable",
+          "amount": 14,
+          "type": "solid"
+        },
+        {
+          "name": "Reinforced Iron Plate",
+          "amount": 2.5,
+          "type": "solid"
+        }
+      ],
+      "key": "cro"
+    },
+    {
+      "name": "Gas Filter",
+      "products": [
+        {
+          "name": "Gas Filter",
+          "amount": 7.5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Coal",
+          "amount": 37.5,
+          "type": "solid"
+        },
+        {
+          "name": "Rubber",
+          "amount": 15,
+          "type": "solid"
+        },
+        {
+          "name": "Fabric",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "key": "gaf"
+    },
+    {
+      "name": "Heavy Modular Frame",
+      "products": [
+        {
+          "name": "Heavy Modular Frame",
+          "amount": 2,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Modular Frame",
+          "amount": 10,
+          "type": "solid"
+        },
+        {
+          "name": "Steel Pipe",
+          "amount": 30,
+          "type": "solid"
+        },
+        {
+          "name": "Encased Industrial Beam",
+          "amount": 10,
+          "type": "solid"
+        },
+        {
+          "name": "Screw",
+          "amount": 200,
+          "type": "solid"
+        }
+      ],
+      "key": "hmf"
+    },
+    {
+      "name": "High-Speed Connector",
+      "products": [
+        {
+          "name": "High-Speed Connector",
+          "amount": 3.75,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Quickwire",
+          "amount": 210,
+          "type": "solid"
+        },
+        {
+          "name": "Cable",
+          "amount": 37.5,
+          "type": "solid"
+        },
+        {
+          "name": "Circuit Board",
+          "amount": 3.75,
+          "type": "solid"
+        }
+      ],
+      "key": "hsc"
+    },
+    {
+      "name": "Iodine Infused Filter",
+      "products": [
+        {
+          "name": "Iodine Infused Filter",
+          "amount": 3.8,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Gas Filter",
+          "amount": 3.8,
+          "type": "solid"
+        },
+        {
+          "name": "Quickwire",
+          "amount": 30,
+          "type": "solid"
+        },
+        {
+          "name": "Rubber",
+          "amount": 7.5,
+          "type": "solid"
+        }
+      ],
+      "key": "iif"
+    },
+    {
+      "name": "Modular Engine",
+      "products": [
+        {
+          "name": "Modular Engine",
+          "amount": 1,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Motor",
+          "amount": 2,
+          "type": "solid"
+        },
+        {
+          "name": "Rubber",
+          "amount": 15,
+          "type": "solid"
+        },
+        {
+          "name": "Smart Plating",
+          "amount": 2,
+          "type": "solid"
+        }
+      ],
+      "key": "moe"
+    },
+    {
+      "name": "Nuclear Fuel Rod",
+      "products": [
+        {
+          "name": "Nuclear Fuel Rod",
+          "amount": 0.4,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Encased Uranium Cell",
+          "amount": 10,
+          "type": "solid"
+        },
+        {
+          "name": "Encased Industrial Beam",
+          "amount": 1.2,
+          "type": "solid"
+        },
+        {
+          "name": "Electromagnetic Control Rod",
+          "amount": 2,
+          "type": "solid"
+        }
+      ],
+      "key": "nfr"
+    },
+    {
+      "name": "Radio Control Unit",
+      "products": [
+        {
+          "name": "Radio Control Unit",
+          "amount": 2.5,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Heat Sink",
+          "amount": 10,
+          "type": "solid"
+        },
+        {
+          "name": "Rubber",
+          "amount": 40,
+          "type": "solid"
+        },
+        {
+          "name": "Crystal Oscillator",
+          "amount": 2.5,
+          "type": "solid"
+        },
+        {
+          "name": "Computer",
+          "amount": 2.5,
+          "type": "solid"
+        }
+      ],
+      "key": "rcu"
+    },
+    {
+      "name": "Rifle Cartridge",
+      "products": [
+        {
+          "name": "Rifle Cartridge",
+          "amount": 15,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Beacon",
+          "amount": 3,
+          "type": "solid"
+        },
+        {
+          "name": "Steel Pipe",
+          "amount": 30,
+          "type": "solid"
+        },
+        {
+          "name": "Black Powder",
+          "amount": 30,
+          "type": "solid"
+        },
+        {
+          "name": "Rubber",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "key": "ric"
+    },
+    {
+      "name": "Supercomputer",
+      "products": [
+        {
+          "name": "Supercomputer",
+          "amount": 1.875,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Computer",
+          "amount": 3.75,
+          "type": "solid"
+        },
+        {
+          "name": "A.I. Limiter",
+          "amount": 3.75,
+          "type": "solid"
+        },
+        {
+          "name": "High-Speed Connector",
+          "amount": 5.625,
+          "type": "solid"
+        },
+        {
+          "name": "Plastic",
+          "amount": 52.5,
+          "type": "solid"
+        }
+      ],
+      "key": "suc"
+    },
+    {
+      "name": "Turbo Motor",
+      "products": [
+        {
+          "name": "Turbo Motor",
+          "amount": 1.875,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Heat Sink",
+          "amount": 7.5,
+          "type": "solid"
+        },
+        {
+          "name": "Radio Control Unit",
+          "amount": 3.75,
+          "type": "solid"
+        },
+        {
+          "name": "Motor",
+          "amount": 7.5,
+          "type": "solid"
+        },
+        {
+          "name": "Rubber",
+          "amount": 45,
+          "type": "solid"
+        }
+      ],
+      "key": "tmo"
+    }
+  ],
+  "refinery": [
+    {
+      "name": "Alumina Solution",
+      "products": [
+        {
+          "name": "Alumina Solution",
+          "amount": 80,
+          "type": "fluid"
+        },
+        {
+          "name": "Silica",
+          "amount": 20,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Bauxite",
+          "amount": 70,
+          "type": "solid"
+        },
+        {
+          "name": "Water",
+          "amount": 100,
+          "type": "fluid"
+        }
+      ],
+      "key": "aso"
+    },
+    {
+      "name": "Aluminum Scrap",
+      "products": [
+        {
+          "name": "Aluminum Scrap",
+          "amount": 360,
+          "type": "solid"
+        },
+        {
+          "name": "Water",
+          "amount": 60,
+          "type": "fluid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Alumina Solution",
+          "amount": 240,
+          "type": "fluid"
+        },
+        {
+          "name": "Petroleum Coke",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "key": "als"
+    },
+    {
+      "name": "Fuel",
+      "products": [
+        {
+          "name": "Fuel",
+          "amount": 40,
+          "type": "fluid"
+        },
+        {
+          "name": "Polymer Resin",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Crude Oil",
+          "amount": 60,
+          "type": "fluid"
+        }
+      ],
+      "key": "ful"
+    },
+    {
+      "name": "Liquid Biofuel",
+      "products": [
+        {
+          "name": "Liquid Biofuel",
+          "amount": 60,
+          "type": "fluid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Solid Biofuel",
+          "amount": 60,
+          "type": "solid"
+        },
+        {
+          "name": "Water",
+          "amount": 45,
+          "type": "fluid"
+        }
+      ],
+      "key": "lbf"
+    },
+    {
+      "name": "Packaged Fuel",
+      "products": [
+        {
+          "name": "Packaged Fuel",
+          "amount": 40,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Fuel",
+          "amount": 40,
+          "type": "fluid"
+        },
+        {
+          "name": "Empty Canister",
+          "amount": 40,
+          "type": "solid"
+        }
+      ],
+      "key": "pfu"
+    },
+    {
+      "name": "Packaged Heavy Oil Residue",
+      "products": [
+        {
+          "name": "Packaged Heavy Oil Residue",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Heavy Oil Residue",
+          "amount": 30,
+          "type": "fluid"
+        },
+        {
+          "name": "Empty Canister",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "key": "phr"
+    },
+    {
+      "name": "Packaged Liquid Biofuel",
+      "products": [
+        {
+          "name": "Packaged Liquid Biofuel",
+          "amount": 40,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Liquid Biofuel",
+          "amount": 40,
+          "type": "fluid"
+        },
+        {
+          "name": "Empty Canister",
+          "amount": 40,
+          "type": "solid"
+        }
+      ],
+      "key": "plb"
+    },
+    {
+      "name": "Packaged Oil",
+      "products": [
+        {
+          "name": "Packaged Oil",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Crude Oil",
+          "amount": 30,
+          "type": "fluid"
+        },
+        {
+          "name": "Empty Canister",
+          "amount": 30,
+          "type": "solid"
+        }
+      ],
+      "key": "poi"
+    },
+    {
+      "name": "Packaged Turbofuel",
+      "products": [
+        {
+          "name": "Packaged Turbofuel",
+          "amount": 20,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Turbofuel",
+          "amount": 20,
+          "type": "fluid"
+        },
+        {
+          "name": "Empty Canister",
+          "amount": 20,
+          "type": "solid"
+        }
+      ],
+      "key": "ptf"
+    },
+    {
+      "name": "Packaged Water",
+      "products": [
+        {
+          "name": "Packaged Water",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Water",
+          "amount": 60,
+          "type": "fluid"
+        },
+        {
+          "name": "Empty Canister",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "key": "pwa"
+    },
+    {
+      "name": "Petroleum Coke",
+      "products": [
+        {
+          "name": "Petroleum Coke",
+          "amount": 120,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Heavy Oil Residue",
+          "amount": 40,
+          "type": "fluid"
+        }
+      ],
+      "key": "pec"
+    },
+    {
+      "name": "Plastic",
+      "products": [
+        {
+          "name": "Plastic",
+          "amount": 20,
+          "type": "solid"
+        },
+        {
+          "name": "Heavy Oil Residue",
+          "amount": 10,
+          "type": "fluid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Crude Oil",
+          "amount": 30,
+          "type": "fluid"
+        }
+      ],
+      "key": "pla"
+    },
+    {
+      "name": "Residual Fuel",
+      "products": [
+        {
+          "name": "Fuel",
+          "amount": 40,
+          "type": "fluid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Heavy Oil Residue",
+          "amount": 60,
+          "type": "fluid"
+        }
+      ],
+      "key": "rfu"
+    },
+    {
+      "name": "Residual Plastic",
+      "products": [
+        {
+          "name": "Plastic",
+          "amount": 20,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Polymer Resin",
+          "amount": 60,
+          "type": "solid"
+        },
+        {
+          "name": "Water",
+          "amount": 20,
+          "type": "fluid"
+        }
+      ],
+      "key": "rpl"
+    },
+    {
+      "name": "Residual Rubber",
+      "products": [
+        {
+          "name": "Rubber",
+          "amount": 20,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Polymer Resin",
+          "amount": 40,
+          "type": "solid"
+        },
+        {
+          "name": "Water",
+          "amount": 40,
+          "type": "fluid"
+        }
+      ],
+      "key": "rru"
+    },
+    {
+      "name": "Rubber",
+      "products": [
+        {
+          "name": "Rubber",
+          "amount": 20,
+          "type": "solid"
+        },
+        {
+          "name": "Heavy Oil Residue",
+          "amount": 20,
+          "type": "fluid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Crude Oil",
+          "amount": 30,
+          "type": "fluid"
+        }
+      ],
+      "key": "rub"
+    },
+    {
+      "name": "Sulfuric Acid",
+      "products": [
+        {
+          "name": "Sulfuric Acid",
+          "amount": 100,
+          "type": "fluid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Sulfur",
+          "amount": 50,
+          "type": "solid"
+        },
+        {
+          "name": "Water",
+          "amount": 50,
+          "type": "fluid"
+        }
+      ],
+      "key": "sua"
+    },
+    {
+      "name": "Unpackage Fuel",
+      "products": [
+        {
+          "name": "Fuel",
+          "amount": 60,
+          "type": "fluid"
+        },
+        {
+          "name": "Empty Canister",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Packaged Fuel",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "key": "ufu"
+    },
+    {
+      "name": "Unpackage Heavy Oil Residue",
+      "products": [
+        {
+          "name": "Heavy Oil Residue",
+          "amount": 20,
+          "type": "fluid"
+        },
+        {
+          "name": "Empty Canister",
+          "amount": 20,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Packaged Heavy Oil Residue",
+          "amount": 20,
+          "type": "solid"
+        }
+      ],
+      "key": "uhr"
+    },
+    {
+      "name": "Unpackage Liquid Biofuel",
+      "products": [
+        {
+          "name": "Liquid Biofuel",
+          "amount": 60,
+          "type": "fluid"
+        },
+        {
+          "name": "Empty Canister",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Packaged Liquid Biofuel",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "key": "ulb"
+    },
+    {
+      "name": "Unpackage Oil",
+      "products": [
+        {
+          "name": "Crude Oil",
+          "amount": 60,
+          "type": "fluid"
+        },
+        {
+          "name": "Empty Canister",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Packaged Oil",
+          "amount": 60,
+          "type": "solid"
+        }
+      ],
+      "key": "uoi"
+    },
+    {
+      "name": "Unpackage Turbofuel",
+      "products": [
+        {
+          "name": "Turbofuel",
+          "amount": 20,
+          "type": "fluid"
+        },
+        {
+          "name": "Empty Canister",
+          "amount": 20,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Packaged Turbofuel",
+          "amount": 20,
+          "type": "solid"
+        }
+      ],
+      "key": "utf"
+    },
+    {
+      "name": "Unpackage Water",
+      "products": [
+        {
+          "name": "Water",
+          "amount": 120,
+          "type": "fluid"
+        },
+        {
+          "name": "Empty Canister",
+          "amount": 120,
+          "type": "solid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Packaged Water",
+          "amount": 120,
+          "type": "solid"
+        }
+      ],
+      "key": "uwa"
+    },
+    {
+      "name": "Uranium Pellet",
+      "products": [
+        {
+          "name": "Uranium Pellet",
+          "amount": 50,
+          "type": "solid"
+        },
+        {
+          "name": "Sulfuric Acid",
+          "amount": 20,
+          "type": "fluid"
+        }
+      ],
+      "ingredients": [
+        {
+          "name": "Uranium",
+          "amount": 50,
+          "type": "solid"
+        },
+        {
+          "name": "Sulfuric Acid",
+          "amount": 80,
+          "type": "fluid"
+        }
+      ],
+      "key": "urp"
+    }
+  ]
+}
