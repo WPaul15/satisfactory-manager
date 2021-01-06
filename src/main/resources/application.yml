@@ -13,4 +13,4 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
 
 data:
-  recipes-file: "file:src/main/resources/data/recipes.test.json"
+  recipes-file: "file:${RECIPES_FILE_PATH:src/main/resources/data/recipes.test.json}"
