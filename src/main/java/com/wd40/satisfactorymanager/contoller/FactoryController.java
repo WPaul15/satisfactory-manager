@@ -5,12 +5,7 @@ import com.wd40.satisfactorymanager.service.FactoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/factory")
@@ -46,11 +41,32 @@ public class FactoryController {
 		);
 	}
 
-	@PostMapping(path = "/remove", produces = MediaType.APPLICATION_JSON_VALUE)
+	@DeleteMapping(path = "/remove", produces = MediaType.APPLICATION_JSON_VALUE)
 	public Factory removeMachine() {
 		Factory removeTestFactory = new Factory("removeTestFactory");
 		factoryService.addMachine(removeTestFactory, "Smelter", "Iron Ingot", 100, 5, "");
 
 		return factoryService.removeMachine(removeTestFactory, "100", 10);
+	}
+
+	@PutMapping(path = "/edit", produces = MediaType.APPLICATION_JSON_VALUE)
+	public Factory editMachine() {
+		Factory editTestFactory = new Factory("editTestFactory");
+		factoryService.addMachine(
+			editTestFactory,
+			"Smelter",
+			"Iron Ingot",
+			105,
+			3,
+			""
+		);
+
+		return factoryService.editMachine(
+			editTestFactory,
+			"105",
+			"Iron Ingot",
+			100,
+			""
+		);
 	}
 }

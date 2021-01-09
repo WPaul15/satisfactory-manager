@@ -16,10 +16,16 @@ public class MachineGroup {
 	private double clockSpeed = 1.0;
 	// TODO: Add recipes
 	private String recipe;
+	private String machineType;
 
 	public MachineGroup() {}
 
-	public MachineGroup(int count, double clockSpeed, String recipe) {
+	public MachineGroup(
+		String machineType,
+		int count,
+		double clockSpeed,
+		String recipe
+	) {
 		this.count = count;
 		this.clockSpeed = clockSpeed;
 		this.recipe = recipe;
@@ -43,5 +49,9 @@ public class MachineGroup {
 
 	public void updateCount(int countChange) {
 		this.count += countChange;
+	}
+
+	public String getMachineType() {
+		return machineType;
 	}
 }

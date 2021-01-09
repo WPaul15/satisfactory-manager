@@ -38,7 +38,10 @@ public class FactoryService {
 		if (machines.containsKey(newKey)) {
 			machines.get(newKey).updateCount(count);
 		} else {
-			machines.put(newKey, new MachineGroup(count, newClock, newRecipe));
+			machines.put(
+				newKey,
+				new MachineGroup(newMachineType, count, newClock, newRecipe)
+			);
 		}
 		return factory;
 	}
@@ -53,7 +56,27 @@ public class FactoryService {
 		return factory;
 	}
 
-	public String getKey(String machineType, String recipe, int clock, String quality) {
+	public Factory editMachine(
+		Factory factory,
+		String machineKey,
+		String newRecipe,
+		int newClock,
+		String newQuality
+	) {
+		Map<String, MachineGroup> machines = factory.getMachines();
+		String machineType = machines.get(machineKey).getMachineType();
+		int count = machines.get(machineKey).getCount();
+		removeMachine(factory, machineKey, count);
+		addMachine(factory, machineType, newRecipe, newClock, count, newQuality);
+		return factory;
+	}
+
+	public String getKey(
+		String machineType,
+		String recipe,
+		int clock,
+		String quality
+	) {
 		// get machine key
 		// get recipe key
 
