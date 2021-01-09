@@ -1,7 +1,9 @@
 package com.wd40.satisfactorymanager.service;
 
 import com.wd40.satisfactorymanager.model.Factory;
+import com.wd40.satisfactorymanager.model.MachineGroup;
 import com.wd40.satisfactorymanager.repository.FactoryRepository;
+import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,32 +25,61 @@ public class FactoryService {
 		return factoryRepository.save(new Factory(name));
 	}
 
-	public void addMachine(String new_machine_type, String new_recipe, int new_clock, int count, String new_quality) {
-		String new_key = generate_key(new_machine_type, new_recipe, new_clock, new_quality);
+	public Factory addMachine(
+		Factory factory,
+		String newMachineType,
+		String newRecipe,
+		int newClock,
+		int count,
+		String newQuality
+	) {
+		Map<String, MachineGroup> machines = factory.getMachines();
+		String newKey = getKey(newMachineType, newRecipe, newClock, newQuality);
+		if (machines.containsKey(newKey)) {
+			machines.get(newKey).updateCount(count);
+		} else {
+			machines.put(newKey, new MachineGroup(count, newClock, newRecipe));
+		}
+		return factory;
 	}
 
-	public String generate_key(String machine_type, String recipe, int clock, String quality) {
+	public Factory removeMachine(Factory factory, String machineKey, int count) {
+		Map<String, MachineGroup> machines = factory.getMachines();
+		if (machines.get(machineKey).getCount() > count) {
+			machines.get(machineKey).updateCount(-count);
+		} else if (machines.get(machineKey).getCount() <= count) {
+			machines.remove(machineKey);
+		}
+		return factory;
+	}
+
+	public String getKey(
+		String machineType,
+		String recipe,
+		int clock,
+		String quality
+	) {
 		// get machine key
 		// get recipe key
 
-		String machine_key = "";
-		String recipe_key = "";
+		String machineKey = "";
+		String recipeKey = "";
 
-		String clock_key = String.format("%03d", clock);
+		String clockKey = String.format("%03d", clock);
 
-		String quality_key = "";
+		String qualityKey = "";
 		switch (quality) {
 			case "Impure":
-				quality_key = "i";
+				qualityKey = "i";
 				break;
 			case "Normal":
-				quality_key = "n";
+				qualityKey = "n";
 				break;
 			case "Pure":
-				quality_key = "p";
+				qualityKey = "p";
 				break;
 		}
 
-		return machine_key + quality_key + recipe_key + clock_key;
+		return machineKey + qualityKey + recipeKey + clockKey;
 	}
 }

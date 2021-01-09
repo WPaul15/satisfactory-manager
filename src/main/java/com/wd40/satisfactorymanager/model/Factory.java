@@ -1,7 +1,7 @@
 package com.wd40.satisfactorymanager.model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,13 +18,13 @@ public class Factory {
 	private String name;
 
 	@ElementCollection
-	private List<Machine> machines;
+	private Map<String, MachineGroup> machines;
 
 	public Factory() {}
 
 	public Factory(String name) {
 		this.name = name;
-		this.machines = new ArrayList<>();
+		this.machines = new HashMap<>();
 	}
 
 	public Integer getId() {
@@ -43,11 +43,11 @@ public class Factory {
 		this.name = name;
 	}
 
-	public List<Machine> getMachines() {
+	public Map<String, MachineGroup> getMachines() {
 		return machines;
 	}
 
-	public void setMachines(List<Machine> machines) {
+	public void setMachines(Map<String, MachineGroup> machines) {
 		this.machines = machines;
 	}
 }
