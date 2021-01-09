@@ -1,9 +1,7 @@
 package com.wd40.satisfactorymanager.contoller;
 
 import com.wd40.satisfactorymanager.model.Factory;
-import com.wd40.satisfactorymanager.model.Recipe;
 import com.wd40.satisfactorymanager.service.FactoryService;
-import com.wd40.satisfactorymanager.service.RecipeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -51,14 +49,7 @@ public class FactoryController {
 	@PostMapping(path = "/remove", produces = MediaType.APPLICATION_JSON_VALUE)
 	public Factory removeMachine() {
 		Factory removeTestFactory = new Factory("removeTestFactory");
-		factoryService.addMachine(
-			removeTestFactory,
-			"Smelter",
-			"Iron Ingot",
-			100,
-			5,
-			""
-		);
+		factoryService.addMachine(removeTestFactory, "Smelter", "Iron Ingot", 100, 5, "");
 
 		return factoryService.removeMachine(removeTestFactory, "100", 10);
 	}
