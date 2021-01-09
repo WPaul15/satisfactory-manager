@@ -7,4 +7,4 @@ services:
     ports:
       - 8080:8080
     environment:
-      RECIPES_FILE_PATH: data/recipes.test.json
+      RECIPES_FILE_PATH: data/recipes.json
