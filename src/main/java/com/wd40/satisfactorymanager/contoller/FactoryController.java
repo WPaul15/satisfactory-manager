@@ -60,4 +60,25 @@ public class FactoryController {
 
 		return factoryService.removeMachine(removeTestFactory, "100", 10);
 	}
+
+	@PostMapping(path = "/edit", produces = MediaType.APPLICATION_JSON_VALUE)
+	public Factory editMachine() {
+		Factory editTestFactory = new Factory("editTestFactory");
+		factoryService.addMachine(
+			editTestFactory,
+			"Smelter",
+			"Iron Ingot",
+			105,
+			3,
+			""
+		);
+
+		return factoryService.editMachine(
+			editTestFactory,
+			"105",
+			"Iron Ingot",
+			100,
+			""
+		);
+	}
 }

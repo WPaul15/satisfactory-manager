@@ -61,13 +61,13 @@ public class FactoryService {
 		String machineKey,
 		String newRecipe,
 		int newClock,
-		int newCount,
 		String newQuality
 	) {
 		Map<String, MachineGroup> machines = factory.getMachines();
 		String machineType = machines.get(machineKey).getMachineType();
-		removeMachine(factory, machineKey, machines.get(machineKey).getCount());
-		addMachine(factory, machineType, newRecipe, newClock, newCount, newQuality);
+		int count = machines.get(machineKey).getCount();
+		removeMachine(factory, machineKey, count);
+		addMachine(factory, machineType, newRecipe, newClock, count, newQuality);
 		return factory;
 	}
 
