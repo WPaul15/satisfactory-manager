@@ -53,12 +53,7 @@ public class FactoryService {
 		return factory;
 	}
 
-	public String getKey(
-		String machineType,
-		String recipe,
-		int clock,
-		String quality
-	) {
+	public String getKey(String machineType, String recipe, int clock, String quality) {
 		// get machine key
 		// get recipe key
 

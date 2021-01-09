@@ -1,0 +1,2343 @@
+[
+  {
+    "name": "Alien Carapace",
+    "outputs": [
+      {
+        "name": "Alien Carapace",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "alc"
+  },
+  {
+    "name": "Alien Organs",
+    "outputs": [
+      {
+        "name": "Alien Organs",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "alo"
+  },
+  {
+    "name": "Biomass",
+    "outputs": [
+      {
+        "name": "Biomass",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "bio"
+  },
+  {
+    "name": "Flower Petals",
+    "outputs": [
+      {
+        "name": "Flower Petals",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "flp"
+  },
+  {
+    "name": "Green Power Slug",
+    "outputs": [
+      {
+        "name": "Green power Slug",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "gps"
+  },
+  {
+    "name": "Heavy Oil Residue",
+    "outputs": [
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 1,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [],
+    "key": "hor"
+  },
+  {
+    "name": "Leaves",
+    "outputs": [
+      {
+        "name": "Leaves",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "lea"
+  },
+  {
+    "name": "Mycelia",
+    "outputs": [
+      {
+        "name": "Mycelia",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "myc"
+  },
+  {
+    "name": "Polymer Resin",
+    "outputs": [
+      {
+        "name": "Polymer Resin",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "pmr"
+  },
+  {
+    "name": "Purple Power Slug",
+    "outputs": [
+      {
+        "name": "Purple Power Slug",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "pps"
+  },
+  {
+    "name": "Yellow Power Slug",
+    "outputs": [
+      {
+        "name": "Yellow Power Slug",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "yps"
+  },
+  {
+    "name": "Wood",
+    "outputs": [
+      {
+        "name": "Wood",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "woo"
+  },
+  {
+    "name": "Bauxite",
+    "machineType": "miner",
+    "outputs": [
+      {
+        "name": "Bauxite",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "bax"
+  },
+  {
+    "name": "Caterium Ore",
+    "machineType": "miner",
+    "outputs": [
+      {
+        "name": "Caterium Ore",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "cat"
+  },
+  {
+    "name": "Coal",
+    "machineType": "miner",
+    "outputs": [
+      {
+        "name": "Coal",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "col"
+  },
+  {
+    "name": "Copper Ore",
+    "machineType": "miner",
+    "outputs": [
+      {
+        "name": "Copper Ore",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "cpr"
+  },
+  {
+    "name": "Iron Ore",
+    "machineType": "miner",
+    "outputs": [
+      {
+        "name": "Iron Ore",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "irn"
+  },
+  {
+    "name": "Limestone",
+    "machineType": "miner",
+    "outputs": [
+      {
+        "name": "Limestone",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "lms"
+  },
+  {
+    "name": "Raw Quartz",
+    "machineType": "miner",
+    "outputs": [
+      {
+        "name": "Raw Quartz",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "raq"
+  },
+  {
+    "name": "Sulfur",
+    "machineType": "miner",
+    "outputs": [
+      {
+        "name": "Sulfur",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "sul"
+  },
+  {
+    "name": "Uranium",
+    "machineType": "miner",
+    "outputs": [
+      {
+        "name": "Uranium",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [],
+    "key": "ura"
+  },
+  {
+    "name": "Water",
+    "machineType": "waterExtractor",
+    "outputs": [
+      {
+        "name": "Water",
+        "amount": 120,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [],
+    "key": "wat"
+  },
+  {
+    "name": "Crude Oil",
+    "machineType": "oilExtractor",
+    "outputs": [
+      {
+        "name": "Crude Oil",
+        "amount": 120,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [],
+    "key": "oil"
+  },
+  {
+    "name": "Caterium Ingot",
+    "machineType": "smelter",
+    "outputs": [
+      {
+        "name": "Caterium Ingot",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Caterium Ore",
+        "amount": 45,
+        "type": "solid"
+      }
+    ],
+    "key": "cti"
+  },
+  {
+    "name": "Copper Ingot",
+    "machineType": "smelter",
+    "outputs": [
+      {
+        "name": "Copper Ingot",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Copper Ore",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "key": "cui"
+  },
+  {
+    "name": "Iron Ingot",
+    "machineType": "smelter",
+    "outputs": [
+      {
+        "name": "Iron Ingot",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Iron Ore",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "key": "iri"
+  },
+  {
+    "name": "Aluminum Ingot",
+    "machineType": "foundry",
+    "outputs": [
+      {
+        "name": "Aluminum Ingot",
+        "amount": 80,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Aluminum Scrap",
+        "amount": 240,
+        "type": "solid"
+      },
+      {
+        "name": "Silica",
+        "amount": 140,
+        "type": "solid"
+      }
+    ],
+    "key": "ali"
+  },
+  {
+    "name": "Steel Ingot",
+    "machineType": "foundry",
+    "outputs": [
+      {
+        "name": "Steel Ingot",
+        "amount": 45,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Iron Ore",
+        "amount": 45,
+        "type": "solid"
+      },
+      {
+        "name": "Coal",
+        "amount": 45,
+        "type": "solid"
+      }
+    ],
+    "key": "sti"
+  },
+  {
+    "name": "Biomass (Alien Carapace)",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Biomass",
+        "amount": 1500,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Alien Carapace",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "key": "bac"
+  },
+  {
+    "name": "Biomass (Alien Organs)",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Biomass",
+        "amount": 1500,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Alien Organs",
+        "amount": 7.5,
+        "type": "solid"
+      }
+    ],
+    "key": "bao"
+  },
+  {
+    "name": "Biomass (Leaves)",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Biomass",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Leaves",
+        "amount": 120,
+        "type": "solid"
+      }
+    ],
+    "key": "ble"
+  },
+  {
+    "name": "Biomass (Mycelia)",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Biomass",
+        "amount": 150,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Mycelia",
+        "amount": 150,
+        "type": "solid"
+      }
+    ],
+    "key": "bmy"
+  },
+  {
+    "name": "Biomass (Wood)",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Biomass",
+        "amount": 300,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Wood",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "key": "bwo"
+  },
+  {
+    "name": "Cable",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Cable",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Wire",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "key": "cab"
+  },
+  {
+    "name": "Color Cartridge",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Color Cartridge",
+        "amount": 75,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Flower Petals",
+        "amount": 37.5,
+        "type": "solid"
+      }
+    ],
+    "key": "clc"
+  },
+  {
+    "name": "Concrete",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Concrete",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Limestone",
+        "amount": 45,
+        "type": "solid"
+      }
+    ],
+    "key": "con"
+  },
+  {
+    "name": "Copper Sheet",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Copper Sheet",
+        "amount": 10,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Copper Ingot",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "key": "cps"
+  },
+  {
+    "name": "Empty Canister",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Empty Canister",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Plastic",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "key": "emc"
+  },
+  {
+    "name": "Iron Plate",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Iron Plate",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Iron Ingot",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "key": "irp"
+  },
+  {
+    "name": "Iron Rod",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Iron Rod",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Iron Ingot",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "key": "irr"
+  },
+  {
+    "name": "Power Shard (1)",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Power Shard",
+        "amount": 7.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Green Power Slug",
+        "amount": 7.5,
+        "type": "solid"
+      }
+    ],
+    "key": "ps1"
+  },
+  {
+    "name": "Power Shard (2)",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Power Shard",
+        "amount": 10,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Yellow Power Slug",
+        "amount": 5,
+        "type": "solid"
+      }
+    ],
+    "key": "ps2"
+  },
+  {
+    "name": "Power Shard (5)",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Power Shard",
+        "amount": 12.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Purple Power Slug",
+        "amount": 2.5,
+        "type": "solid"
+      }
+    ],
+    "key": "ps5"
+  },
+  {
+    "name": "Quartz Crystal",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Quartz Crystal",
+        "amount": 22.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Raw Quartz",
+        "amount": 37.5,
+        "type": "solid"
+      }
+    ],
+    "key": "quc"
+  },
+  {
+    "name": "Quickwire",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Quickwire",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Caterium Ingot",
+        "amount": 12,
+        "type": "solid"
+      }
+    ],
+    "key": "quw"
+  },
+  {
+    "name": "Screw",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Screw",
+        "amount": 40,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Iron Rod",
+        "amount": 10,
+        "type": "solid"
+      }
+    ],
+    "key": "scr"
+  },
+  {
+    "name": "Silica",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Silica",
+        "amount": 37.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Raw Quartz",
+        "amount": 22.5,
+        "type": "solid"
+      }
+    ],
+    "key": "sil"
+  },
+  {
+    "name": "Solid Biofuel",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Solid Biofuel",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Biomass",
+        "amount": 120,
+        "type": "solid"
+      }
+    ],
+    "key": "sbf"
+  },
+  {
+    "name": "Spiked Rebar",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Spiked Rebar",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Iron Rod",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "key": "spr"
+  },
+  {
+    "name": "Steel Beam",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Steel Beam",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Steel Ingot",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "key": "stb"
+  },
+  {
+    "name": "Steel Pipe",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Steel Pipe",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Steel Ingot",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "key": "stp"
+  },
+  {
+    "name": "Wire",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "name": "Wire",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Copper Ingot",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "key": "wir"
+  },
+  {
+    "name": "A.I. Limiter",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "A.I. Limiter",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Circuit Board",
+        "amount": 2,
+        "type": "solid"
+      },
+      {
+        "name": "Quickwire",
+        "amount": 18,
+        "type": "solid"
+      }
+    ],
+    "key": "ail"
+  },
+  {
+    "name": "Alclad Aluminum Sheet",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Alclad Aluminum Sheet",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Aluminum Ingot",
+        "amount": 60,
+        "type": "solid"
+      },
+      {
+        "name": "Copper Ingot",
+        "amount": 22.5,
+        "type": "solid"
+      }
+    ],
+    "key": "aas"
+  },
+  {
+    "name": "Automated Wiring",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Automated Wiring",
+        "amount": 2.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Stator",
+        "amount": 2.5,
+        "type": "solid"
+      },
+      {
+        "name": "Cable",
+        "amount": 50,
+        "type": "solid"
+      }
+    ],
+    "key": "auw"
+  },
+  {
+    "name": "Black Powder",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Black Powder",
+        "amount": 7.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Coal",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "name": "Sulfur",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "key": "blp"
+  },
+  {
+    "name": "Circuit Board",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Circuit Board",
+        "amount": 7.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Copper Sheet",
+        "amount": 15,
+        "type": "solid"
+      },
+      {
+        "name": "Plastic",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "key": "cib"
+  },
+  {
+    "name": "Electromagnetic Control Rod",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Electromagnetic Control Rod",
+        "amount": 4,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Stator",
+        "amount": 6,
+        "type": "solid"
+      },
+      {
+        "name": "A.I. Limiter",
+        "amount": 4,
+        "type": "solid"
+      }
+    ],
+    "key": "ecr"
+  },
+  {
+    "name": "Encased Industrial Beam",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Encased Industrial Beam",
+        "amount": 6,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Steel Beam",
+        "amount": 24,
+        "type": "solid"
+      },
+      {
+        "name": "Concrete",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "key": "eib"
+  },
+  {
+    "name": "Encased Uranium Cell",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Encased Uranium Cell",
+        "amount": 10,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Uranium Pellet",
+        "amount": 40,
+        "type": "solid"
+      },
+      {
+        "name": "Concrete",
+        "amount": 9,
+        "type": "solid"
+      }
+    ],
+    "key": "euc"
+  },
+  {
+    "name": "Fabric",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Fabric",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Mycelia",
+        "amount": 15,
+        "type": "solid"
+      },
+      {
+        "name": "Biomass",
+        "amount": 75,
+        "type": "solid"
+      }
+    ],
+    "key": "fab"
+  },
+  {
+    "name": "Heat Sink",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Heat Sink",
+        "amount": 10,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Alclad Aluminum Sheet",
+        "amount": 40,
+        "type": "solid"
+      },
+      {
+        "name": "Rubber",
+        "amount": 70,
+        "type": "solid"
+      }
+    ],
+    "key": "hes"
+  },
+  {
+    "name": "Modular Frame",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Modular Frame",
+        "amount": 2,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Reinforced Iron Plate",
+        "amount": 3,
+        "type": "solid"
+      },
+      {
+        "name": "Iron Rod",
+        "amount": 12,
+        "type": "solid"
+      }
+    ],
+    "key": "mof"
+  },
+  {
+    "name": "Motor",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Motor",
+        "amount": 5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Rotor",
+        "amount": 10,
+        "type": "solid"
+      },
+      {
+        "name": "Stator",
+        "amount": 10,
+        "type": "solid"
+      }
+    ],
+    "key": "mot"
+  },
+  {
+    "name": "Nobelisk",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Nobelisk",
+        "amount": 3,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Black Powder",
+        "amount": 15,
+        "type": "solid"
+      },
+      {
+        "name": "Steel Pipe",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "key": "nob"
+  },
+  {
+    "name": "Reinforced Iron Plate",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Reinforced Iron Plate",
+        "amount": 5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Iron Plate",
+        "amount": 30,
+        "type": "solid"
+      },
+      {
+        "name": "Screw",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "key": "rip"
+  },
+  {
+    "name": "Rotor",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Rotor",
+        "amount": 4,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Iron Rod",
+        "amount": 20,
+        "type": "solid"
+      },
+      {
+        "name": "Screw",
+        "amount": 100,
+        "type": "solid"
+      }
+    ],
+    "key": "rot"
+  },
+  {
+    "name": "Smart Plating",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Smart Plating",
+        "amount": 2,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Reinforced Iron Plate",
+        "amount": 2,
+        "type": "solid"
+      },
+      {
+        "name": "Rotor",
+        "amount": 2,
+        "type": "solid"
+      }
+    ],
+    "key": "smp"
+  },
+  {
+    "name": "Stator",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Stator",
+        "amount": 5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Steel Pipe",
+        "amount": 15,
+        "type": "solid"
+      },
+      {
+        "name": "Wire",
+        "amount": 40,
+        "type": "solid"
+      }
+    ],
+    "key": "sta"
+  },
+  {
+    "name": "Versatile Framework",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "name": "Versatile Framework",
+        "amount": 5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Modular Frame",
+        "amount": 2.5,
+        "type": "solid"
+      },
+      {
+        "name": "Steel Beam",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "key": "vfw"
+  },
+  {
+    "name": "Adaptive Control Unit",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Adaptive Control Unit",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Automated Wiring",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "name": "Circuit Board",
+        "amount": 5,
+        "type": "solid"
+      },
+      {
+        "name": "Heavy Modular Frame",
+        "amount": 1,
+        "type": "solid"
+      },
+      {
+        "name": "Computer",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "key": "acu"
+  },
+  {
+    "name": "Battery",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Battery",
+        "amount": 5.625,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Alclad Aluminum Sheet",
+        "amount": 15,
+        "type": "solid"
+      },
+      {
+        "name": "Wire",
+        "amount": 30,
+        "type": "solid"
+      },
+      {
+        "name": "Sulfur",
+        "amount": 37.5,
+        "type": "solid"
+      },
+      {
+        "name": "Plastic",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "key": "bat"
+  },
+  {
+    "name": "Beacon",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Beacon",
+        "amount": 7.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Iron Plate",
+        "amount": 22.5,
+        "type": "solid"
+      },
+      {
+        "name": "Iron Rod",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "name": "Wire",
+        "amount": 112.5,
+        "type": "solid"
+      },
+      {
+        "name": "Cable",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "key": "bea"
+  },
+  {
+    "name": "Computer",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Computer",
+        "amount": 2.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Circuit Board",
+        "amount": 25,
+        "type": "solid"
+      },
+      {
+        "name": "Cable",
+        "amount": 22.5,
+        "type": "solid"
+      },
+      {
+        "name": "Plastic",
+        "amount": 45,
+        "type": "solid"
+      },
+      {
+        "name": "Screw",
+        "amount": 130,
+        "type": "solid"
+      }
+    ],
+    "key": "com"
+  },
+  {
+    "name": "Crystal Oscillator",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Crystal Oscillator",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Quartz Crystal",
+        "amount": 18,
+        "type": "solid"
+      },
+      {
+        "name": "Cable",
+        "amount": 14,
+        "type": "solid"
+      },
+      {
+        "name": "Reinforced Iron Plate",
+        "amount": 2.5,
+        "type": "solid"
+      }
+    ],
+    "key": "cro"
+  },
+  {
+    "name": "Gas Filter",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Gas Filter",
+        "amount": 7.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Coal",
+        "amount": 37.5,
+        "type": "solid"
+      },
+      {
+        "name": "Rubber",
+        "amount": 15,
+        "type": "solid"
+      },
+      {
+        "name": "Fabric",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "key": "gaf"
+  },
+  {
+    "name": "Heavy Modular Frame",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Heavy Modular Frame",
+        "amount": 2,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Modular Frame",
+        "amount": 10,
+        "type": "solid"
+      },
+      {
+        "name": "Steel Pipe",
+        "amount": 30,
+        "type": "solid"
+      },
+      {
+        "name": "Encased Industrial Beam",
+        "amount": 10,
+        "type": "solid"
+      },
+      {
+        "name": "Screw",
+        "amount": 200,
+        "type": "solid"
+      }
+    ],
+    "key": "hmf"
+  },
+  {
+    "name": "High-Speed Connector",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "High-Speed Connector",
+        "amount": 3.75,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Quickwire",
+        "amount": 210,
+        "type": "solid"
+      },
+      {
+        "name": "Cable",
+        "amount": 37.5,
+        "type": "solid"
+      },
+      {
+        "name": "Circuit Board",
+        "amount": 3.75,
+        "type": "solid"
+      }
+    ],
+    "key": "hsc"
+  },
+  {
+    "name": "Iodine Infused Filter",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Iodine Infused Filter",
+        "amount": 3.8,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Gas Filter",
+        "amount": 3.8,
+        "type": "solid"
+      },
+      {
+        "name": "Quickwire",
+        "amount": 30,
+        "type": "solid"
+      },
+      {
+        "name": "Rubber",
+        "amount": 7.5,
+        "type": "solid"
+      }
+    ],
+    "key": "iif"
+  },
+  {
+    "name": "Modular Engine",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Modular Engine",
+        "amount": 1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Motor",
+        "amount": 2,
+        "type": "solid"
+      },
+      {
+        "name": "Rubber",
+        "amount": 15,
+        "type": "solid"
+      },
+      {
+        "name": "Smart Plating",
+        "amount": 2,
+        "type": "solid"
+      }
+    ],
+    "key": "moe"
+  },
+  {
+    "name": "Nuclear Fuel Rod",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Nuclear Fuel Rod",
+        "amount": 0.4,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Encased Uranium Cell",
+        "amount": 10,
+        "type": "solid"
+      },
+      {
+        "name": "Encased Industrial Beam",
+        "amount": 1.2,
+        "type": "solid"
+      },
+      {
+        "name": "Electromagnetic Control Rod",
+        "amount": 2,
+        "type": "solid"
+      }
+    ],
+    "key": "nfr"
+  },
+  {
+    "name": "Radio Control Unit",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Radio Control Unit",
+        "amount": 2.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Heat Sink",
+        "amount": 10,
+        "type": "solid"
+      },
+      {
+        "name": "Rubber",
+        "amount": 40,
+        "type": "solid"
+      },
+      {
+        "name": "Crystal Oscillator",
+        "amount": 2.5,
+        "type": "solid"
+      },
+      {
+        "name": "Computer",
+        "amount": 2.5,
+        "type": "solid"
+      }
+    ],
+    "key": "rcu"
+  },
+  {
+    "name": "Rifle Cartridge",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Rifle Cartridge",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Beacon",
+        "amount": 3,
+        "type": "solid"
+      },
+      {
+        "name": "Steel Pipe",
+        "amount": 30,
+        "type": "solid"
+      },
+      {
+        "name": "Black Powder",
+        "amount": 30,
+        "type": "solid"
+      },
+      {
+        "name": "Rubber",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "key": "ric"
+  },
+  {
+    "name": "Supercomputer",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Supercomputer",
+        "amount": 1.875,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Computer",
+        "amount": 3.75,
+        "type": "solid"
+      },
+      {
+        "name": "A.I. Limiter",
+        "amount": 3.75,
+        "type": "solid"
+      },
+      {
+        "name": "High-Speed Connector",
+        "amount": 5.625,
+        "type": "solid"
+      },
+      {
+        "name": "Plastic",
+        "amount": 52.5,
+        "type": "solid"
+      }
+    ],
+    "key": "suc"
+  },
+  {
+    "name": "Turbo Motor",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "name": "Turbo Motor",
+        "amount": 1.875,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Heat Sink",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "name": "Radio Control Unit",
+        "amount": 3.75,
+        "type": "solid"
+      },
+      {
+        "name": "Motor",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "name": "Rubber",
+        "amount": 45,
+        "type": "solid"
+      }
+    ],
+    "key": "tmo"
+  },
+  {
+    "name": "Alumina Solution",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Alumina Solution",
+        "amount": 80,
+        "type": "fluid"
+      },
+      {
+        "name": "Silica",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Bauxite",
+        "amount": 70,
+        "type": "solid"
+      },
+      {
+        "name": "Water",
+        "amount": 100,
+        "type": "fluid"
+      }
+    ],
+    "key": "aso"
+  },
+  {
+    "name": "Aluminum Scrap",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Aluminum Scrap",
+        "amount": 360,
+        "type": "solid"
+      },
+      {
+        "name": "Water",
+        "amount": 60,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Alumina Solution",
+        "amount": 240,
+        "type": "fluid"
+      },
+      {
+        "name": "Petroleum Coke",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "key": "als"
+  },
+  {
+    "name": "Fuel",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Fuel",
+        "amount": 40,
+        "type": "fluid"
+      },
+      {
+        "name": "Polymer Resin",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Crude Oil",
+        "amount": 60,
+        "type": "fluid"
+      }
+    ],
+    "key": "ful"
+  },
+  {
+    "name": "Liquid Biofuel",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Liquid Biofuel",
+        "amount": 60,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Solid Biofuel",
+        "amount": 60,
+        "type": "solid"
+      },
+      {
+        "name": "Water",
+        "amount": 45,
+        "type": "fluid"
+      }
+    ],
+    "key": "lbf"
+  },
+  {
+    "name": "Packaged Fuel",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Packaged Fuel",
+        "amount": 40,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Fuel",
+        "amount": 40,
+        "type": "fluid"
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 40,
+        "type": "solid"
+      }
+    ],
+    "key": "pfu"
+  },
+  {
+    "name": "Packaged Heavy Oil Residue",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Packaged Heavy Oil Residue",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 30,
+        "type": "fluid"
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "key": "phr"
+  },
+  {
+    "name": "Packaged Liquid Biofuel",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Packaged Liquid Biofuel",
+        "amount": 40,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Liquid Biofuel",
+        "amount": 40,
+        "type": "fluid"
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 40,
+        "type": "solid"
+      }
+    ],
+    "key": "plb"
+  },
+  {
+    "name": "Packaged Oil",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Packaged Oil",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Crude Oil",
+        "amount": 30,
+        "type": "fluid"
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 30,
+        "type": "solid"
+      }
+    ],
+    "key": "poi"
+  },
+  {
+    "name": "Packaged Turbofuel",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Packaged Turbofuel",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Turbofuel",
+        "amount": 20,
+        "type": "fluid"
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "key": "ptf"
+  },
+  {
+    "name": "Packaged Water",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Packaged Water",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Water",
+        "amount": 60,
+        "type": "fluid"
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "key": "pwa"
+  },
+  {
+    "name": "Petroleum Coke",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Petroleum Coke",
+        "amount": 120,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 40,
+        "type": "fluid"
+      }
+    ],
+    "key": "pec"
+  },
+  {
+    "name": "Plastic",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Plastic",
+        "amount": 20,
+        "type": "solid"
+      },
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 10,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Crude Oil",
+        "amount": 30,
+        "type": "fluid"
+      }
+    ],
+    "key": "pla"
+  },
+  {
+    "name": "Residual Fuel",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Fuel",
+        "amount": 40,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 60,
+        "type": "fluid"
+      }
+    ],
+    "key": "rfu"
+  },
+  {
+    "name": "Residual Plastic",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Plastic",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Polymer Resin",
+        "amount": 60,
+        "type": "solid"
+      },
+      {
+        "name": "Water",
+        "amount": 20,
+        "type": "fluid"
+      }
+    ],
+    "key": "rpl"
+  },
+  {
+    "name": "Residual Rubber",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Rubber",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Polymer Resin",
+        "amount": 40,
+        "type": "solid"
+      },
+      {
+        "name": "Water",
+        "amount": 40,
+        "type": "fluid"
+      }
+    ],
+    "key": "rru"
+  },
+  {
+    "name": "Rubber",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Rubber",
+        "amount": 20,
+        "type": "solid"
+      },
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 20,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Crude Oil",
+        "amount": 30,
+        "type": "fluid"
+      }
+    ],
+    "key": "rub"
+  },
+  {
+    "name": "Sulfuric Acid",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Sulfuric Acid",
+        "amount": 100,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Sulfur",
+        "amount": 50,
+        "type": "solid"
+      },
+      {
+        "name": "Water",
+        "amount": 50,
+        "type": "fluid"
+      }
+    ],
+    "key": "sua"
+  },
+  {
+    "name": "Unpackage Fuel",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Fuel",
+        "amount": 60,
+        "type": "fluid"
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Packaged Fuel",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "key": "ufu"
+  },
+  {
+    "name": "Unpackage Heavy Oil Residue",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Heavy Oil Residue",
+        "amount": 20,
+        "type": "fluid"
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Packaged Heavy Oil Residue",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "key": "uhr"
+  },
+  {
+    "name": "Unpackage Liquid Biofuel",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Liquid Biofuel",
+        "amount": 60,
+        "type": "fluid"
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Packaged Liquid Biofuel",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "key": "ulb"
+  },
+  {
+    "name": "Unpackage Oil",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Crude Oil",
+        "amount": 60,
+        "type": "fluid"
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Packaged Oil",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "key": "uoi"
+  },
+  {
+    "name": "Unpackage Turbofuel",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Turbofuel",
+        "amount": 20,
+        "type": "fluid"
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Packaged Turbofuel",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "key": "utf"
+  },
+  {
+    "name": "Unpackage Water",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Water",
+        "amount": 120,
+        "type": "fluid"
+      },
+      {
+        "name": "Empty Canister",
+        "amount": 120,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Packaged Water",
+        "amount": 120,
+        "type": "solid"
+      }
+    ],
+    "key": "uwa"
+  },
+  {
+    "name": "Uranium Pellet",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "name": "Uranium Pellet",
+        "amount": 50,
+        "type": "solid"
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": 20,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Uranium",
+        "amount": 50,
+        "type": "solid"
+      },
+      {
+        "name": "Sulfuric Acid",
+        "amount": 80,
+        "type": "fluid"
+      }
+    ],
+    "key": "urp"
+  }
+]
