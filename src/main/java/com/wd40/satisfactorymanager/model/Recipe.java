@@ -16,6 +16,8 @@ public class Recipe {
 	private Integer id;
 
 	private String name;
+	private final MachineType machineType = MachineType.NONE;
+	private String key;
 
 	@OneToMany(cascade = CascadeType.ALL)
 	private Set<Ingredient> inputs;
@@ -33,23 +35,19 @@ public class Recipe {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public String getKey() {
+		return key;
+	}
+
+	public MachineType getMachineType() {
+		return machineType;
 	}
 
 	public Set<Ingredient> getInputs() {
 		return inputs;
 	}
 
-	public void setInputs(Set<Ingredient> inputs) {
-		this.inputs = inputs;
-	}
-
 	public Set<Ingredient> getOutputs() {
 		return outputs;
-	}
-
-	public void setOutputs(Set<Ingredient> outputs) {
-		this.outputs = outputs;
 	}
 }

@@ -19,12 +19,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class FactoryController {
 
 	private final FactoryService factoryService;
-	private final RecipeService recipeService;
 
 	@Autowired
-	public FactoryController(FactoryService factoryService, RecipeService recipeService) {
+	public FactoryController(FactoryService factoryService) {
 		this.factoryService = factoryService;
-		this.recipeService = recipeService;
 	}
 
 	@GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
