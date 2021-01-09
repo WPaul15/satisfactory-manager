@@ -4,6 +4,9 @@ server:
     context-path: /api
 
 spring:
+  jackson:
+    mapper:
+      ACCEPT_CASE_INSENSITIVE_PROPERTIES: true
   datasource:
     url: "jdbc:h2:mem:testdb"
     driver-class-name: org.h2.Driver
