@@ -53,6 +53,13 @@ public class FactoryService {
 		return factory;
 	}
 
+	public Factory editMachine(Factory factory, String machineKey, String machineType, String newRecipe, int newClock, int newCount, String newQuality) {
+		Map<String, MachineGroup> machines = factory.getMachines();
+		removeMachine(factory, machineKey, machines.get(machineKey).getCount());
+		addMachine(factory, machineType, newRecipe, newClock, newCount, newQuality);
+		return factory;
+	}
+
 	public String getKey(
 		String machineType,
 		String recipe,
