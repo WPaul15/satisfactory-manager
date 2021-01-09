@@ -4,10 +4,16 @@ server:
     context-path: /api
 
 spring:
+  jackson:
+    mapper:
+      ACCEPT_CASE_INSENSITIVE_PROPERTIES: true
   datasource:
     url: "jdbc:h2:mem:testdb"
-    driverClassName: org.h2.Driver
+    driver-class-name: org.h2.Driver
     username: sa
     password: password
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+
+data:
+  recipes-file: "file:${RECIPES_FILE_PATH:src/main/resources/data/recipes.json}"

@@ -49,14 +49,7 @@ public class FactoryController {
 	@PostMapping(path = "/remove", produces = MediaType.APPLICATION_JSON_VALUE)
 	public Factory removeMachine() {
 		Factory removeTestFactory = new Factory("removeTestFactory");
-		factoryService.addMachine(
-			removeTestFactory,
-			"Smelter",
-			"Iron Ingot",
-			100,
-			5,
-			""
-		);
+		factoryService.addMachine(removeTestFactory, "Smelter", "Iron Ingot", 100, 5, "");
 
 		return factoryService.removeMachine(removeTestFactory, "100", 10);
 	}
