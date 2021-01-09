@@ -33,4 +33,31 @@ public class FactoryController {
 	public Factory createNewFactory(@PathVariable("name") String name) {
 		return factoryService.createNewFactory(name);
 	}
+
+	@PostMapping(path = "/add", produces = MediaType.APPLICATION_JSON_VALUE)
+	public Factory addMachine() {
+		return factoryService.addMachine(
+			new Factory("newFactory"),
+			"Smelter",
+			"Iron Ingot",
+			100,
+			2,
+			""
+		);
+	}
+
+	@PostMapping(path = "/remove", produces = MediaType.APPLICATION_JSON_VALUE)
+	public Factory removeMachine() {
+		Factory removeTestFactory = new Factory("removeTestFactory");
+		factoryService.addMachine(
+			removeTestFactory,
+			"Smelter",
+			"Iron Ingot",
+			100,
+			5,
+			""
+		);
+
+		return factoryService.removeMachine(removeTestFactory, "100", 10);
+	}
 }
