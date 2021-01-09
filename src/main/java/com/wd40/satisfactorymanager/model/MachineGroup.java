@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Machine {
+public class MachineGroup {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,7 +17,13 @@ public class Machine {
 	// TODO: Add recipes
 	private String recipe;
 
-	public Machine() {}
+	public MachineGroup() {}
+
+	public MachineGroup(int count, double clockSpeed, String recipe) {
+		this.count = count;
+		this.clockSpeed = clockSpeed;
+		this.recipe = recipe;
+	}
 
 	public int getCount() {
 		return count;
@@ -33,5 +39,9 @@ public class Machine {
 
 	public void setClockSpeed(double clockSpeed) {
 		this.clockSpeed = clockSpeed;
+	}
+
+	public void updateCount(int countChange) {
+		this.count += countChange;
 	}
 }
