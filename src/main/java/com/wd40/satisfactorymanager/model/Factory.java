@@ -11,43 +11,42 @@ import javax.persistence.Id;
 @Entity
 public class Factory {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Integer id;
 
-	private String name;
+  private String name;
 
-	@ElementCollection
-	private Map<String, MachineGroup> machines;
+  @ElementCollection private Map<String, MachineGroup> machines;
 
-	public Factory() {}
+  public Factory() {}
 
-	public Factory(String name) {
-		this.name = name;
-		this.machines = new HashMap<>();
-	}
+  public Factory(String name) {
+    this.name = name;
+    this.machines = new HashMap<>();
+  }
 
-	public Integer getId() {
-		return id;
-	}
+  public Integer getId() {
+    return id;
+  }
 
-	private void setId(int id) {
-		this.id = id;
-	}
+  private void setId(int id) {
+    this.id = id;
+  }
 
-	public String getName() {
-		return name;
-	}
+  public String getName() {
+    return name;
+  }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+  public void setName(String name) {
+    this.name = name;
+  }
 
-	public Map<String, MachineGroup> getMachines() {
-		return machines;
-	}
+  public Map<String, MachineGroup> getMachines() {
+    return machines;
+  }
 
-	public void setMachines(Map<String, MachineGroup> machines) {
-		this.machines = machines;
-	}
+  public void setMachines(Map<String, MachineGroup> machines) {
+    this.machines = machines;
+  }
 }

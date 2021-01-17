@@ -11,62 +11,43 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/factory")
 public class FactoryController {
 
-	private final FactoryService factoryService;
+  private final FactoryService factoryService;
 
-	@Autowired
-	public FactoryController(FactoryService factoryService) {
-		this.factoryService = factoryService;
-	}
+  @Autowired
+  public FactoryController(FactoryService factoryService) {
+    this.factoryService = factoryService;
+  }
 
-	@GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public Factory getFactoryById(@PathVariable Integer id) {
-		return factoryService.getFactoryById(id);
-	}
+  @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+  public Factory getFactoryById(@PathVariable Integer id) {
+    return factoryService.getFactoryById(id);
+  }
 
-	@PostMapping(path = "/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
-	@ResponseStatus(HttpStatus.CREATED)
-	public Factory createNewFactory(@PathVariable("name") String name) {
-		return factoryService.createNewFactory(name);
-	}
+  @PostMapping(path = "/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
+  @ResponseStatus(HttpStatus.CREATED)
+  public Factory createNewFactory(@PathVariable("name") String name) {
+    return factoryService.createNewFactory(name);
+  }
 
-	@PostMapping(path = "/add", produces = MediaType.APPLICATION_JSON_VALUE)
-	public Factory addMachine() {
-		return factoryService.addMachine(
-			new Factory("newFactory"),
-			"Smelter",
-			"Iron Ingot",
-			100,
-			2,
-			""
-		);
-	}
+  @PostMapping(path = "/add", produces = MediaType.APPLICATION_JSON_VALUE)
+  public Factory addMachine() {
+    return factoryService.addMachine(
+        new Factory("newFactory"), "Smelter", "Iron Ingot", 100, 2, "");
+  }
 
-	@DeleteMapping(path = "/remove", produces = MediaType.APPLICATION_JSON_VALUE)
-	public Factory removeMachine() {
-		Factory removeTestFactory = new Factory("removeTestFactory");
-		factoryService.addMachine(removeTestFactory, "Smelter", "Iron Ingot", 100, 5, "");
+  @DeleteMapping(path = "/remove", produces = MediaType.APPLICATION_JSON_VALUE)
+  public Factory removeMachine() {
+    Factory removeTestFactory = new Factory("removeTestFactory");
+    factoryService.addMachine(removeTestFactory, "Smelter", "Iron Ingot", 100, 5, "");
 
-		return factoryService.removeMachine(removeTestFactory, "100", 10);
-	}
+    return factoryService.removeMachine(removeTestFactory, "100", 10);
+  }
 
-	@PutMapping(path = "/edit", produces = MediaType.APPLICATION_JSON_VALUE)
-	public Factory editMachine() {
-		Factory editTestFactory = new Factory("editTestFactory");
-		factoryService.addMachine(
-			editTestFactory,
-			"Smelter",
-			"Iron Ingot",
-			105,
-			3,
-			""
-		);
+  @PutMapping(path = "/edit", produces = MediaType.APPLICATION_JSON_VALUE)
+  public Factory editMachine() {
+    Factory editTestFactory = new Factory("editTestFactory");
+    factoryService.addMachine(editTestFactory, "Smelter", "Iron Ingot", 105, 3, "");
 
-		return factoryService.editMachine(
-			editTestFactory,
-			"105",
-			"Iron Ingot",
-			100,
-			""
-		);
-	}
+    return factoryService.editMachine(editTestFactory, "105", "Iron Ingot", 100, "");
+  }
 }

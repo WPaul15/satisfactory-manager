@@ -29,8 +29,7 @@ spotless {
 
 		importOrder()
 		removeUnusedImports()
-
-		prettier(['prettier-plugin-java': '1.0.1']).config('parser': 'java').configFile('/.prettierrc.yml')
+		googleJavaFormat()
 	}
 }
 

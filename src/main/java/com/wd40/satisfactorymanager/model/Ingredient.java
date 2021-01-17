@@ -9,42 +9,42 @@ import javax.persistence.Id;
 @Entity
 public class Ingredient {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Integer id;
 
-	private String name;
-	private int amount;
-	private String type;
+  private String name;
+  private int amount;
+  private String type;
 
-	public Ingredient() {}
+  public Ingredient() {}
 
-	@JsonIgnore
-	public Integer getId() {
-		return id;
-	}
+  @JsonIgnore
+  public Integer getId() {
+    return id;
+  }
 
-	public String getName() {
-		return name;
-	}
+  public String getName() {
+    return name;
+  }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+  public void setName(String name) {
+    this.name = name;
+  }
 
-	public int getAmount() {
-		return amount;
-	}
+  public int getAmount() {
+    return amount;
+  }
 
-	public void setAmount(int amount) {
-		this.amount = amount;
-	}
+  public void setAmount(int amount) {
+    this.amount = amount;
+  }
 
-	public String getType() {
-		return type;
-	}
+  public String getType() {
+    return type;
+  }
 
-	public void setType(String type) {
-		this.type = type;
-	}
+  public void setType(String type) {
+    this.type = type;
+  }
 }

@@ -17,36 +17,34 @@ import org.springframework.stereotype.Service;
 @Service
 public class RecipeService {
 
-	private static final Logger LOG = LoggerFactory.getLogger(RecipeService.class);
+  private static final Logger LOG = LoggerFactory.getLogger(RecipeService.class);
 
-	@Value("${data.recipes-file}")
-	private String recipesFilePath;
+  @Value("${data.recipes-file}")
+  private String recipesFilePath;
 
-	private final RecipeRepository recipeRepository;
+  private final RecipeRepository recipeRepository;
 
-	private final ObjectMapper objectMapper = new ObjectMapper();
+  private final ObjectMapper objectMapper = new ObjectMapper();
 
-	@Autowired
-	public RecipeService(RecipeRepository recipeRepository) {
-		this.recipeRepository = recipeRepository;
-	}
+  @Autowired
+  public RecipeService(RecipeRepository recipeRepository) {
+    this.recipeRepository = recipeRepository;
+  }
 
-	@PostConstruct
-	private void readRecipeFile() throws IOException {
-		LOG.info("Reading recipe file '{}'", recipesFilePath);
+  @PostConstruct
+  private void readRecipeFile() throws IOException {
+    LOG.info("Reading recipe file '{}'", recipesFilePath);
 
-		Set<Recipe> recipes = objectMapper.readValue(
-			new URL(recipesFilePath),
-			new TypeReference<>() {}
-		);
-		recipeRepository.saveAll(recipes);
-	}
+    Set<Recipe> recipes =
+        objectMapper.readValue(new URL(recipesFilePath), new TypeReference<>() {});
+    recipeRepository.saveAll(recipes);
+  }
 
-	public Recipe getRecipeById(Integer id) {
-		return recipeRepository.findById(id).orElseThrow();
-	}
+  public Recipe getRecipeById(Integer id) {
+    return recipeRepository.findById(id).orElseThrow();
+  }
 
-	public Recipe getRecipeByName(String name) {
-		return recipeRepository.findByName(name).orElseThrow();
-	}
+  public Recipe getRecipeByName(String name) {
+    return recipeRepository.findByName(name).orElseThrow();
+  }
 }

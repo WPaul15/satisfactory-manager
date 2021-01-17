@@ -11,43 +11,43 @@ import javax.persistence.OneToMany;
 @Entity
 public class Recipe {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Integer id;
 
-	private String name;
-	private final MachineType machineType = MachineType.NONE;
-	private String key;
+  private String name;
+  private final MachineType machineType = MachineType.NONE;
+  private String key;
 
-	@OneToMany(cascade = CascadeType.ALL)
-	private Set<Ingredient> inputs;
+  @OneToMany(cascade = CascadeType.ALL)
+  private Set<Ingredient> inputs;
 
-	@OneToMany(cascade = CascadeType.ALL)
-	private Set<Ingredient> outputs;
+  @OneToMany(cascade = CascadeType.ALL)
+  private Set<Ingredient> outputs;
 
-	public Recipe() {}
+  public Recipe() {}
 
-	public Integer getId() {
-		return id;
-	}
+  public Integer getId() {
+    return id;
+  }
 
-	public String getName() {
-		return name;
-	}
+  public String getName() {
+    return name;
+  }
 
-	public String getKey() {
-		return key;
-	}
+  public String getKey() {
+    return key;
+  }
 
-	public MachineType getMachineType() {
-		return machineType;
-	}
+  public MachineType getMachineType() {
+    return machineType;
+  }
 
-	public Set<Ingredient> getInputs() {
-		return inputs;
-	}
+  public Set<Ingredient> getInputs() {
+    return inputs;
+  }
 
-	public Set<Ingredient> getOutputs() {
-		return outputs;
-	}
+  public Set<Ingredient> getOutputs() {
+    return outputs;
+  }
 }

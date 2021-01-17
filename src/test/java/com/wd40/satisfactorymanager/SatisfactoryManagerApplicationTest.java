@@ -6,6 +6,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class SatisfactoryManagerApplicationTest {
 
-	@Test
-	void contextLoads() {}
+  @Test
+  void contextLoads() {}
 }
