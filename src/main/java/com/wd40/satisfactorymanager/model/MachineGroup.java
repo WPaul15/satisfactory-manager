@@ -13,14 +13,14 @@ public class MachineGroup {
   private Integer id;
 
   private int count;
-  private double clockSpeed = 1.0;
+  private int clockSpeed = 100;
   // TODO: Add recipes
   private String recipe;
   private String machineType;
 
   public MachineGroup() {}
 
-  public MachineGroup(String machineType, int count, double clockSpeed, String recipe) {
+  public MachineGroup(String machineType, int count, int clockSpeed, String recipe) {
     this.count = count;
     this.clockSpeed = clockSpeed;
     this.recipe = recipe;
@@ -34,11 +34,11 @@ public class MachineGroup {
     this.count = count;
   }
 
-  public double getClockSpeed() {
+  public int getClockSpeed() {
     return clockSpeed;
   }
 
-  public void setClockSpeed(double clockSpeed) {
+  public void setClockSpeed(int clockSpeed) {
     this.clockSpeed = clockSpeed;
   }
 
