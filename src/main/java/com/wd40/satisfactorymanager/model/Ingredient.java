@@ -13,7 +13,7 @@ public class Ingredient {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer id;
 
-  private String name;
+  private String item;
   private int amount;
 
   public Ingredient() {}
@@ -23,12 +23,12 @@ public class Ingredient {
     return id;
   }
 
-  public String getName() {
-    return name;
+  public String getItem() {
+    return item;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setItem(String item) {
+    this.item = item;
   }
 
   public int getAmount() {
