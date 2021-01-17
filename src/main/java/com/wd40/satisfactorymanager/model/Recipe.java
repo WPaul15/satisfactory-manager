@@ -1,5 +1,6 @@
 package com.wd40.satisfactorymanager.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -15,9 +16,11 @@ public class Recipe {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Integer id;
 
+  @JsonProperty("key")
+  private String keySegment;
+
   private String name;
   private final MachineType machineType = MachineType.NONE;
-  private String key;
 
   @OneToMany(cascade = CascadeType.ALL)
   private Set<Ingredient> inputs;
@@ -31,12 +34,12 @@ public class Recipe {
     return id;
   }
 
-  public String getName() {
-    return name;
+  public String getKeySegment() {
+    return keySegment;
   }
 
-  public String getKey() {
-    return key;
+  public String getName() {
+    return name;
   }
 
   public MachineType getMachineType() {
