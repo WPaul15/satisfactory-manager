@@ -1,6 +1,7 @@
 package com.wd40.satisfactorymanager.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.wd40.satisfactorymanager.model.Recipe;
 import com.wd40.satisfactorymanager.repository.RecipeRepository;
@@ -23,12 +24,12 @@ public class RecipeService {
   private String recipesFilePath;
 
   private final RecipeRepository recipeRepository;
-
   private final ObjectMapper objectMapper = new ObjectMapper();
 
   @Autowired
   public RecipeService(RecipeRepository recipeRepository) {
     this.recipeRepository = recipeRepository;
+    this.objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
   }
 
   @PostConstruct

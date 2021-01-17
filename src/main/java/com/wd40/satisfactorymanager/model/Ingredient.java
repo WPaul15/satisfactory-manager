@@ -15,7 +15,6 @@ public class Ingredient {
 
   private String name;
   private int amount;
-  private String type;
 
   public Ingredient() {}
 
@@ -38,13 +37,5 @@ public class Ingredient {
 
   public void setAmount(int amount) {
     this.amount = amount;
-  }
-
-  public String getType() {
-    return type;
-  }
-
-  public void setType(String type) {
-    this.type = type;
   }
 }
