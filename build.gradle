@@ -24,6 +24,10 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+lombok {
+	generateLombokConfig.enabled = false
+}
+
 spotless {
 	java {
 		target 'src/*/java/**/*.java'
