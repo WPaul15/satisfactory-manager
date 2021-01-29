@@ -21,6 +21,9 @@ public class StaticDataService {
   @Value("${data.recipes-file}")
   private String recipesFilePath;
 
+  @Value("${data.alt-recipes-file}")
+  private String altRecipesFilePath;
+
   @Getter private Set<Recipe> recipes;
 
   private final ObjectMapper objectMapper = new ObjectMapper();
@@ -35,5 +38,9 @@ public class StaticDataService {
     LOG.debug("Reading recipe file '{}'", recipesFilePath);
 
     recipes = objectMapper.readValue(new URL(recipesFilePath), new TypeReference<>() {});
+
+    LOG.debug("Reading alternative recipes file '{}'", altRecipesFilePath);
+
+    recipes.addAll(objectMapper.readValue(new URL(altRecipesFilePath), new TypeReference<>() {}));
   }
 }
