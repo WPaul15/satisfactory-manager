@@ -14,4 +14,11 @@ public class Recipe {
   String machineType;
   Set<Ingredient> inputs;
   Set<Ingredient> outputs;
+
+  @Value
+  static class Ingredient {
+
+    String item;
+    int amount;
+  }
 }
