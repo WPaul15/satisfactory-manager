@@ -13,7 +13,7 @@ public class Generator extends Machine {
   Set<Fuel> fuels;
 
   @JsonCreator
-  Generator(
+  public Generator(
       @JsonProperty("key") String keySegment,
       @JsonProperty("name") String name,
       @JsonProperty("category") String category,
@@ -24,7 +24,7 @@ public class Generator extends Machine {
   }
 
   @Value
-  static class Fuel {
+  public static class Fuel {
 
     String name;
     double burnTime;

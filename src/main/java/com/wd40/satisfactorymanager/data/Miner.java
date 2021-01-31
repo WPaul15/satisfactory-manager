@@ -13,7 +13,7 @@ public class Miner extends Machine {
   int baseExtractionRate;
 
   @JsonCreator
-  Miner(
+  public Miner(
       @JsonProperty("key") String keySegment,
       @JsonProperty("name") String name,
       @JsonProperty("category") String category,

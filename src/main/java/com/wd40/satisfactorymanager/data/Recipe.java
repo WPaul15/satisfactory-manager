@@ -16,7 +16,7 @@ public class Recipe {
   Set<Ingredient> outputs;
 
   @Value
-  static class Ingredient {
+  public static class Ingredient {
 
     String item;
     int amount;
