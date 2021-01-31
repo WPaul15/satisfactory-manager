@@ -23,7 +23,12 @@ public class FactoryService {
   }
 
   public Factory createNewFactory(String name) {
-    return factoryRepository.save(new Factory(name));
+    Factory factory = new Factory(name);
+    Map<String, MachineGroup> machines = new HashMap<>();
+    machines.put("amh", new MachineGroup("Miner", 2, 100, "Iron Ore"));
+    factory.setMachineGroups(machines);
+
+    return factoryRepository.save(factory);
   }
 
   public Factory addMachine(
