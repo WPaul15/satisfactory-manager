@@ -7,6 +7,7 @@ import com.wd40.satisfactorymanager.data.Machine;
 import com.wd40.satisfactorymanager.data.Recipe;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Map;
 import java.util.Set;
 import javax.annotation.PostConstruct;
 import lombok.Getter;
@@ -29,7 +30,7 @@ public class StaticDataService {
   private String machinesFilePath;
 
   @Getter private Set<Recipe> recipes;
-  @Getter private Set<Machine> machines;
+  @Getter private Map<String, Machine> machines;
 
   private final ObjectMapper objectMapper = new ObjectMapper();
 

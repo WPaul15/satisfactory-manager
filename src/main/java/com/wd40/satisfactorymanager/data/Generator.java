@@ -11,16 +11,18 @@ import lombok.Value;
 public class Generator extends Machine {
 
   Set<Fuel> fuels;
+  int waterUsage;
 
   @JsonCreator
   public Generator(
-      @JsonProperty("key") String keySegment,
       @JsonProperty("name") String name,
       @JsonProperty("category") String category,
       @JsonProperty("power") int power,
-      @JsonProperty("fuels") Set<Fuel> fuels) {
-    super(keySegment, name, category, power);
+      @JsonProperty("fuels") Set<Fuel> fuels,
+      @JsonProperty("waterUsage") int waterUsage) {
+    super(name, category, power);
     this.fuels = fuels;
+    this.waterUsage = waterUsage;
   }
 
   @Value

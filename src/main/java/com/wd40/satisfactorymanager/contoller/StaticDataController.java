@@ -3,6 +3,7 @@ package com.wd40.satisfactorymanager.contoller;
 import com.wd40.satisfactorymanager.data.Machine;
 import com.wd40.satisfactorymanager.data.Recipe;
 import com.wd40.satisfactorymanager.service.StaticDataService;
+import java.util.Map;
 import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -27,7 +28,7 @@ public class StaticDataController {
   }
 
   @GetMapping(path = "/machines", produces = MediaType.APPLICATION_JSON_VALUE)
-  public Set<Machine> getMachines() {
+  public Map<String, Machine> getMachines() {
     return staticDataService.getMachines();
   }
 }

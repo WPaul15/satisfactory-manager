@@ -1,6 +1,5 @@
 package com.wd40.satisfactorymanager.data;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
@@ -23,9 +22,6 @@ import lombok.experimental.FieldDefaults;
   @Type(value = Generator.class, name = "Generator")
 })
 public class Machine {
-
-  @JsonProperty("key")
-  String keySegment;
 
   String name;
   String category;

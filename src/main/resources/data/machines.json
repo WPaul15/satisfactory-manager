@@ -1,86 +1,75 @@
-[
-  {
+{
+  "m1": {
     "name": "Miner Mk. 1",
     "type": "Miner",
     "category": "production",
     "power": -5,
-    "rate": 60,
-    "key": "m1"
+    "rate": 60
   },
-  {
+  "m2": {
     "name": "Miner Mk. 2",
     "type": "Miner",
     "category": "production",
     "power": -12,
-    "rate": 120,
-    "key": "m2"
+    "rate": 120
   },
-  {
+  "m3": {
     "name": "Miner Mk. 3",
     "type": "Miner",
     "category": "production",
     "power": -30,
-    "rate": 240,
-    "key": "m3"
+    "rate": 240
   },
-  {
+  "sml": {
     "name": "Smelter",
     "type": "Machine",
     "category": "production",
-    "power": -4,
-    "key": "sml"
+    "power": -4
   },
-  {
+  "fnd": {
     "name": "Foundry",
     "type": "Machine",
     "category": "production",
-    "power": -16,
-    "key": "fnd"
+    "power": -16
   },
-  {
+  "con": {
     "name": "Constructor",
     "type": "Machine",
     "category": "production",
-    "power": -4,
-    "key": "con"
+    "power": -4
   },
-  {
+  "asm": {
     "name": "Assembler",
     "type": "Machine",
     "category": "production",
-    "power": -15,
-    "key": "asm"
+    "power": -15
   },
-  {
+  "man": {
     "name": "Manufacturer",
     "type": "Machine",
     "category": "production",
-    "power": -55,
-    "key": "man"
+    "power": -55
   },
-  {
+  "wat": {
     "name": "Water Extractor",
     "type": "Machine",
     "category": "production",
-    "power": -20,
-    "key": "wat"
+    "power": -20
   },
-  {
+  "oi": {
     "name": "Oil Extractor",
     "type": "Machine",
     "category": "production",
     "power": -40,
-    "key": "oi",
     "rate": 120
   },
-  {
+  "ref": {
     "name": "Refinery",
     "type": "Machine",
     "category": "production",
-    "power": -30,
-    "key": "ref"
+    "power": -30
   },
-  {
+  "bgn": {
     "name": "Biomass Burner",
     "type": "Generator",
     "category": "generation",
@@ -126,10 +115,9 @@
         "name": "Packaged Liquid Biofuel",
         "burnTime": 25
       }
-    ],
-    "key": "bgn"
+    ]
   },
-  {
+  "cgn": {
     "name": "Coal Generator",
     "type": "Generator",
     "category": "generation",
@@ -148,10 +136,9 @@
         "burnTime": 2.4
       }
     ],
-    "water_usage": 45,
-    "key": "cgn"
+    "waterUsage": 45
   },
-  {
+  "fgn": {
     "name": "Fuel Generator",
     "type": "Generator",
     "category": "generation",
@@ -169,18 +156,16 @@
         "name": "Turbofuel",
         "burnTime": 13.333
       }
-    ],
-    "key": "fgn"
+    ]
   },
-  {
+  "ggn": {
     "name": "Geo Thermal Generator",
     "type": "Generator",
     "category": "generation",
     "power": 200,
-    "fuels": [],
-    "key": "ggn"
+    "fuels": []
   },
-  {
+  "ngn": {
     "name": "Nuclear Power Plant",
     "type": "Generator",
     "category": "generation",
@@ -191,77 +176,66 @@
         "burnTime": 300
       }
     ],
-    "water_usage": 300,
-    "key": "ngn"
+    "waterUsage": 300
   },
-  {
+  "snk": {
     "name": "AWESOME Sink",
     "type": "Machine",
     "category": "misc",
-    "power": -30,
-    "key": "snk"
+    "power": -30
   },
-  {
+  "jmp": {
     "name": "Jump Pad",
     "type": "Machine",
     "category": "misc",
-    "power": -5,
-    "key": "jmp"
+    "power": -5
   },
-  {
+  "jly": {
     "name": "U-Jelly Landing Pad",
     "type": "Machine",
     "category": "misc",
-    "power": -5,
-    "key": "jly"
+    "power": -5
   },
-  {
+  "pmp": {
     "name": "Pipeline Pump",
     "type": "Machine",
     "category": "misc",
-    "power": -4,
-    "key": "pmp"
+    "power": -4
   },
-  {
+  "rdr": {
     "name": "Radar Tower",
     "type": "Machine",
     "category": "misc",
-    "power": -30,
-    "key": "rdr"
+    "power": -30
   },
-  {
+  "hte": {
     "name": "Hyper Tube Entrance",
     "type": "Machine",
     "category": "misc",
-    "power": -10,
-    "key": "hte"
+    "power": -10
   },
-  {
+  "tks": {
     "name": "Truck Station",
     "type": "Machine",
     "category": "misc",
-    "power": -20,
-    "key": "tks"
+    "power": -20
   },
-  {
+  "elo": {
     "name": "Electric Locomotive",
     "type": "Machine",
     "category": "misc",
-    "power": -110,
-    "key": "elo"
+    "power": -110
   },
-  {
+  "tns": {
     "name": "Train Station",
     "type": "Machine",
     "category": "misc",
-    "power": -50,
-    "key": "tns"
+    "power": -50
   },
-  {
+  "fpt": {
     "name": "Freight Platform",
     "type": "Machine",
     "category": "misc",
-    "power": -50,
-    "key": "fpt"
+    "power": -50
   }
-]
+}

@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import com.wd40.satisfactorymanager.data.Machine;
 import com.wd40.satisfactorymanager.data.Recipe;
+import java.util.Map;
 import java.util.Set;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,7 @@ public class StaticDataServiceTest {
 
   @Test
   void shouldLoadMachineFile() {
-    Set<Machine> machines = staticDataService.getMachines();
+    Map<String, Machine> machines = staticDataService.getMachines();
 
     assertThat(machines).isNotEmpty();
   }
