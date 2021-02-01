@@ -35,22 +35,22 @@ public class StaticDataControllerTest {
 
   @Test
   void shouldReturnSetOfRecipes() {
-    Set<Recipe> recipes = new HashSet<>();
+    Map<String, Recipe> recipes = new HashMap<>();
     Set<Ingredient> inputs = new HashSet<>();
     Set<Ingredient> outputs = new HashSet<>();
 
     inputs.add(new Ingredient("Test Input", 30));
     outputs.add(new Ingredient("Test Output", 45));
 
-    recipes.add(new Recipe("tst", "Test Recipe", "constructor", inputs, outputs));
+    recipes.put("trc", new Recipe("Test Recipe", "constructor", inputs, outputs));
 
     Mockito.when(staticDataService.getRecipes()).thenReturn(recipes);
 
-    Set<Recipe> result = staticDataController.getRecipes();
+    Map<String, Recipe> result = staticDataController.getRecipes();
 
     assertThat(result).isNotEmpty();
     assertThat(result.size()).isEqualTo(1);
-    assertThat(result.containsAll(recipes)).isTrue();
+    assertThat(result.keySet().containsAll(recipes.keySet())).isTrue();
   }
 
   @Test

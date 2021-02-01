@@ -8,7 +8,6 @@ import com.wd40.satisfactorymanager.data.Recipe;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Map;
-import java.util.Set;
 import javax.annotation.PostConstruct;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
@@ -29,7 +28,7 @@ public class StaticDataService {
   @Value("${data.machines-file}")
   private String machinesFilePath;
 
-  @Getter private Set<Recipe> recipes;
+  @Getter private Map<String, Recipe> recipes;
   @Getter private Map<String, Machine> machines;
 
   private final ObjectMapper objectMapper = new ObjectMapper();
@@ -47,7 +46,7 @@ public class StaticDataService {
 
     LOG.debug("Reading alternate recipe file '{}'", altRecipesFilePath);
 
-    recipes.addAll(objectMapper.readValue(new URL(altRecipesFilePath), new TypeReference<>() {}));
+    recipes.putAll(objectMapper.readValue(new URL(altRecipesFilePath), new TypeReference<>() {}));
 
     LOG.debug("Reading machine file '{}'", machinesFilePath);
 

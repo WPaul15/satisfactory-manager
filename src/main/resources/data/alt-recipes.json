@@ -1,1728 +1,1659 @@
-[
-    {
-      "name": "Alternate: Coke Steel Ingot",
-      "machineType": "foundry",
-      "outputs": [
-        {
-          "item": "Steel Ingot",
-          "amount": 100,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Iron Ore",
-          "amount": 75,
-          "type": "solid"
-        },
-        {
-          "item": "Petroleum Coke",
-          "amount": 75,
-          "type": "solid"
-        }
-      ],
-      "key": "@cs"
-    },
-    {
-      "name": "Alternate: Compacted Steel Ingot",
-      "machineType": "foundry",
-      "outputs": [
-        {
-          "item": "Steel Ingot",
-          "amount": 37.5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Iron Ore",
-          "amount": 22.5,
-          "type": "solid"
-        },
-        {
-          "item": "Compacted Coal",
-          "amount": 11.3,
-          "type": "solid"
-        }
-      ],
-      "key": "@ms"
-    },
-    {
-      "name": "Alternate: Copper Alloy Ingot",
-      "machineType": "foundry",
-      "outputs": [
-        {
-          "item": "Copper Ingot",
-          "amount": 100,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Copper Ore",
-          "amount": 50,
-          "type": "solid"
-        },
-        {
-          "item": "Iron Ore",
-          "amount": 25,
-          "type": "solid"
-        }
-      ],
-      "key": "@ca"
-    },
-    {
-      "name": "Alternate: Iron Alloy Ingot",
-      "machineType": "foundry",
-      "outputs": [
-        {
-          "item": "Iron Ingot",
-          "amount": 50,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Iron Ore",
-          "amount": 20,
-          "type": "solid"
-        },
-        {
-          "item": "Copper Ore",
-          "amount": 20,
-          "type": "solid"
-        }
-      ],
-      "key": "@ia"
-    },
-    {
-      "name": "Alternate: Solid Steel Ingot",
-      "machineType": "foundry",
-      "outputs": [
-        {
-          "item": "Steel Ingot",
-          "amount": 60,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Iron Ingot",
-          "amount": 40,
-          "type": "solid"
-        },
-        {
-          "item": "Coal",
-          "amount": 40,
-          "type": "solid"
-        }
-      ],
-      "key": "@ss"
-    },
-    {
-      "name": "Alternate: Biocoal",
-      "machineType": "constructor",
-      "outputs": [
-        {
-          "item": "Coal",
-          "amount": 45,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Biomass",
-          "amount": 37.5,
-          "type": "solid"
-        }
-      ],
-      "key": "@bc"
-    },
-    {
-      "name": "Alternate: Casted Screw",
-      "machineType": "constructor",
-      "outputs": [
-        {
-          "item": "Screw",
-          "amount": 50,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Iron Ingot",
-          "amount": 12.5,
-          "type": "solid"
-        }
-      ],
-      "key": "@sc"
-    },
-    {
-      "name": "Alternate: Caterium Wire",
-      "machineType": "constructor",
-      "outputs": [
-        {
-          "item": "Wire",
-          "amount": 120,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Caterium Ingot",
-          "amount": 15,
-          "type": "solid"
-        }
-      ],
-      "key": "@cw"
-    },
-    {
-      "name": "Alternate: Charcoal",
-      "machineType": "constructor",
-      "outputs": [
-        {
-          "item": "Coal",
-          "amount": 150,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Wood",
-          "amount": 15,
-          "type": "solid"
-        }
-      ],
-      "key": "@ch"
-    },
-    {
-      "name": "Alternate: Iron Wire",
-      "machineType": "constructor",
-      "outputs": [
-        {
-          "item": "Wire",
-          "amount": 22.5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Iron Ingot",
-          "amount": 12.5,
-          "type": "solid"
-        }
-      ],
-      "key": "@iw"
-    },
-    {
-      "name": "Alternate: Steel Rod",
-      "machineType": "constructor",
-      "outputs": [
-        {
-          "item": "Iron Rod",
-          "amount": 48,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Steel Ingot",
-          "amount": 12,
-          "type": "solid"
-        }
-      ],
-      "key": "@sr"
-    },
-    {
-      "name": "Alternate: Steel Screw",
-      "machineType": "constructor",
-      "outputs": [
-        {
-          "item": "Screw",
-          "amount": 260,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Steel Beam",
-          "amount": 5,
-          "type": "solid"
-        }
-      ],
-      "key": "@ts"
-    },
-    {
-      "name": "Alternate: Adhered Iron Plate",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Reinforced Iron Plate",
-          "amount": 3.8,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Iron Plate",
-          "amount": 11.3,
-          "type": "solid"
-        },
-        {
-          "item": "Rubber",
-          "amount": 3.8,
-          "type": "solid"
-        }
-      ],
-      "key": "@ap"
-    },
-    {
-      "name": "Alternate: Bolted Frame",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Modular Frame",
-          "amount": 5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Reinforced Iron Plate",
-          "amount": 7.5,
-          "type": "solid"
-        },
-        {
-          "item": "Screw",
-          "amount": 140,
-          "type": "solid"
-        }
-      ],
-      "key": "@bf"
-    },
-    {
-      "name": "Alternate: Bolted Iron Plate",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Reinforced Iron Plate",
-          "amount": 15,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Iron Plate",
-          "amount": 90,
-          "type": "solid"
-        },
-        {
-          "item": "Screw",
-          "amount": 250,
-          "type": "solid"
-        }
-      ],
-      "key": "@bp"
-    },
-    {
-      "name": "Alternate: Caterium Circuit Board",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Circuit Board",
-          "amount": 8.8,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Plastic",
-          "amount": 12.5,
-          "type": "solid"
-        },
-        {
-          "item": "Quickwire",
-          "amount": 37.5,
-          "type": "solid"
-        }
-      ],
-      "key": "@cb"
-    },
-    {
-      "name": "Alternate: Cheap Silica",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Silica",
-          "amount": 26.3,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Raw Quartz",
-          "amount": 11.3,
-          "type": "solid"
-        },
-        {
-          "item": "Limestone",
-          "amount": 18.8,
-          "type": "solid"
-        }
-      ],
-      "key": "@$s"
-    },
-    {
-      "name": "Alternate: Coated Iron Plate",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Iron Plate",
-          "amount": 75,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Iron Ingot",
-          "amount": 50,
-          "type": "solid"
-        },
-        {
-          "item": "Plastic",
-          "amount": 10,
-          "type": "solid"
-        }
-      ],
-      "key": "@cp"
-    },
-    {
-      "name": "Alternate: Compacted Coal",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Compacted Coal",
-          "amount": 25,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Coal",
-          "amount": 25,
-          "type": "solid"
-        },
-        {
-          "item": "Sulfur",
-          "amount": 25,
-          "type": "solid"
-        }
-      ],
-      "key": "@cc"
-    },
-    {
-      "name": "Alternate: Copper Rotor",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Rotor",
-          "amount": 11.3,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Copper Sheet",
-          "amount": 22.5,
-          "type": "solid"
-        },
-        {
-          "item": "Screw",
-          "amount": 195,
-          "type": "solid"
-        }
-      ],
-      "key": "@cr"
-    },
-    {
-      "name": "Alternate: Crystal Computer",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Computer",
-          "amount": 2.8,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Circuit Board",
-          "amount": 7.5,
-          "type": "solid"
-        },
-        {
-          "item": "Crystal Oscillator",
-          "amount": 2.8,
-          "type": "solid"
-        }
-      ],
-      "key": "@cm"
-    },
-    {
-      "name": "Alternate: Electrode Circuit Board",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Circuit Board",
-          "amount": 5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Rubber",
-          "amount": 30,
-          "type": "solid"
-        },
-        {
-          "item": "Petroleum Coke",
-          "amount": 45,
-          "type": "solid"
-        }
-      ],
-      "key": "@eb"
-    },
-    {
-      "name": "Alternate: Electromagnetic Connection Rod",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Electromagnetic Control Rod",
-          "amount": 10,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Stator",
-          "amount": 10,
-          "type": "solid"
-        },
-        {
-          "item": "High-Speed Connector",
-          "amount": 5,
-          "type": "solid"
-        }
-      ],
-      "key": "@ec"
-    },
-    {
-      "name": "Alternate: Encased Industrial Pipe",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Encased Industrial Beam",
-          "amount": 4,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Steel Pipe",
-          "amount": 28,
-          "type": "solid"
-        },
-        {
-          "item": "Concrete",
-          "amount": 20,
-          "type": "solid"
-        }
-      ],
-      "key": "@ep"
-    },
-    {
-      "name": "Alternate: Fine Concrete",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Concrete",
-          "amount": 25,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Silica",
-          "amount": 7.5,
-          "type": "solid"
-        },
-        {
-          "item": "Limestone",
-          "amount": 30,
-          "type": "solid"
-        }
-      ],
-      "key": "@fc"
-    },
-    {
-      "name": "Alternate: Fused Quickwire",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Quickwire",
-          "amount": 90,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Caterium Ingot",
-          "amount": 7.5,
-          "type": "solid"
-        },
-        {
-          "item": "Copper Ingot",
-          "amount": 37.5,
-          "type": "solid"
-        }
-      ],
-      "key": "@fq"
-    },
-    {
-      "name": "Alternate: Fused Wire",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Wire",
-          "amount": 90,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Copper Ingot",
-          "amount": 12,
-          "type": "solid"
-        },
-        {
-          "item": "Caterium Ingot",
-          "amount": 3,
-          "type": "solid"
-        }
-      ],
-      "key": "@fw"
-    },
-    {
-      "name": "Alternate: Gun Powder",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Black Powder",
-          "amount": 15,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Sulfur",
-          "amount": 7.5,
-          "type": "solid"
-        },
-        {
-          "item": "Compacted Coal",
-          "amount": 3.8,
-          "type": "solid"
-        }
-      ],
-      "key": "@gp"
-    },
-    {
-      "name": "Alternate: Heat Exchanger",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Heat Sink",
-          "amount": 13.1,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Alclad Aluminum Sheet",
-          "amount": 37.5,
-          "type": "solid"
-        },
-        {
-          "item": "Copper Sheet",
-          "amount": 56.3,
-          "type": "solid"
-        }
-      ],
-      "key": "@he"
-    },
-    {
-      "name": "Alternate: Insulated Cable",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Cable",
-          "amount": 100,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Wire",
-          "amount": 45,
-          "type": "solid"
-        },
-        {
-          "item": "Rubber",
-          "amount": 30,
-          "type": "solid"
-        }
-      ],
-      "key": "@ic"
-    },
-    {
-      "name": "Alternate: Quickwire Cable",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Cable",
-          "amount": 27.5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Quickwire",
-          "amount": 7.5,
-          "type": "solid"
-        },
-        {
-          "item": "Rubber",
-          "amount": 5,
-          "type": "solid"
-        }
-      ],
-      "key": "@qc"
-    },
-    {
-      "name": "Alternate: Quickwire Stator",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Stator",
-          "amount": 8,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Steel Pipe",
-          "amount": 16,
-          "type": "solid"
-        },
-        {
-          "item": "Quickwire",
-          "amount": 60,
-          "type": "solid"
-        }
-      ],
-      "key": "@qs"
-    },
-    {
-      "name": "Alternate: Rubber Concrete",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Concrete",
-          "amount": 45,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Limestone",
-          "amount": 50,
-          "type": "solid"
-        },
-        {
-          "item": "Rubber",
-          "amount": 10,
-          "type": "solid"
-        }
-      ],
-      "key": "@rc"
-    },
-    {
-      "name": "Alternate: Silicone Circuit Board",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Circuit Board",
-          "amount": 12.5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Copper Sheet",
-          "amount": 27.5,
-          "type": "solid"
-        },
-        {
-          "item": "Silica",
-          "amount": 27.5,
-          "type": "solid"
-        }
-      ],
-      "key": "@sb"
-    },
-    {
-      "name": "Alternate: Steel Coated Plate",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Iron Plate",
-          "amount": 45,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Steel Ingot",
-          "amount": 7.5,
-          "type": "solid"
-        },
-        {
-          "item": "Plastic",
-          "amount": 5,
-          "type": "solid"
-        }
-      ],
-      "key": "@sp"
-    },
-    {
-      "name": "Alternate: Steel Rotor",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Rotor",
-          "amount": 5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Steel Pipe",
-          "amount": 10,
-          "type": "solid"
-        },
-        {
-          "item": "Wire",
-          "amount": 30,
-          "type": "solid"
-        }
-      ],
-      "key": "@so"
-    },
-    {
-      "name": "Alternate: Steeled Frame",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Modular Frame",
-          "amount": 3,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Reinforced Iron Plate",
-          "amount": 2,
-          "type": "solid"
-        },
-        {
-          "item": "Steel Pipe",
-          "amount": 10,
-          "type": "solid"
-        }
-      ],
-      "key": "@sf"
-    },
-    {
-      "name": "Alternate: Stitched Iron Plate",
-      "machineType": "assembler",
-      "outputs": [
-        {
-          "item": "Reinforced Iron Plate",
-          "amount": 5.625,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Iron Plate",
-          "amount": 18.75,
-          "type": "solid"
-        },
-        {
-          "item": "Wire",
-          "amount": 37.5,
-          "type": "solid"
-        }
-      ],
-      "key": "@tp"
-    },
-    {
-      "name": "Alternate: Automated Speed Wiring",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Automated Wiring",
-          "amount": 7.5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Stator",
-          "amount": 3.8,
-          "type": "solid"
-        },
-        {
-          "item": "Wire",
-          "amount": 75,
-          "type": "solid"
-        },
-        {
-          "item": "High-Speed Connector",
-          "amount": 1.9,
-          "type": "solid"
-        }
-      ],
-      "key": "@aw"
-    },
-    {
-      "name": "Alternate: Caterium Computer",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Computer",
-          "amount": 3.8,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Circuit Board",
-          "amount": 26.3,
-          "type": "solid"
-        },
-        {
-          "item": "Quickwire",
-          "amount": 105,
-          "type": "solid"
-        },
-        {
-          "item": "Rubber",
-          "amount": 45,
-          "type": "solid"
-        }
-      ],
-      "key": "@am"
-    },
-    {
-      "name": "Alternate: Crystal Beacon",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Beacon",
-          "amount": 10,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Steel Beam",
-          "amount": 2,
-          "type": "solid"
-        },
-        {
-          "item": "Steel Pipe",
-          "amount": 8,
-          "type": "solid"
-        },
-        {
-          "item": "Crystal Oscillator",
-          "amount": 0.5,
-          "type": "solid"
-        }
-      ],
-      "key": "@cb"
-    },
-    {
-      "name": "Alternate: Flexible Framework",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Versatile Framework",
-          "amount": 7.5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Modular Frame",
-          "amount": 3.8,
-          "type": "solid"
-        },
-        {
-          "item": "Steel Beam",
-          "amount": 22.5,
-          "type": "solid"
-        },
-        {
-          "item": "Rubber",
-          "amount": 30,
-          "type": "solid"
-        }
-      ],
-      "key": "@ff"
-    },
-    {
-      "name": "Alternate: Heavy Encased Frame",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Heavy Modular Frame",
-          "amount": 2.8,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Modular Frame",
-          "amount": 7.5,
-          "type": "solid"
-        },
-        {
-          "item": "Encased Industrial Frame",
-          "amount": 9.4,
-          "type": "solid"
-        },
-        {
-          "item": "Steel Pipe",
-          "amount": 33.8,
-          "type": "solid"
-        },
-        {
-          "item": "Concrete",
-          "amount": 20.6,
-          "type": "solid"
-        }
-      ],
-      "key": "@hf"
-    },
-    {
-      "name": "Alternate: Heavy Flexible Frame",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Heavy Modular Frame",
-          "amount": 3.8,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Modular Frame",
-          "amount": 18.8,
-          "type": "solid"
-        },
-        {
-          "item": "Encased Industrial Beam",
-          "amount": 11.3,
-          "type": "solid"
-        },
-        {
-          "item": "Rubber",
-          "amount": 75,
-          "type": "solid"
-        },
-        {
-          "item": "Screw",
-          "amount": 390,
-          "type": "solid"
-        }
-      ],
-      "key": "@hx"
-    },
-    {
-      "name": "Alternate: Infused Uranium Cell",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Encased Uranium Cell",
-          "amount": 17.5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Uranium Pellet",
-          "amount": 20,
-          "type": "solid"
-        },
-        {
-          "item": "Sulfur",
-          "amount": 22.5,
-          "type": "solid"
-        },
-        {
-          "item": "Silica",
-          "amount": 22.5,
-          "type": "solid"
-        },
-        {
-          "item": "Quickwire",
-          "amount": 37.5,
-          "type": "solid"
-        }
-      ],
-      "key": "@uc"
-    },
-    {
-      "name": "Alternate: Insulated Crystal Oscillator",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Crystal Oscillator",
-          "amount": 1.9,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Quartz Crystal",
-          "amount": 18.8,
-          "type": "solid"
-        },
-        {
-          "item": "Rubber",
-          "amount": 13.1,
-          "type": "solid"
-        },
-        {
-          "item": "A.I. Limiter",
-          "amount": 1.9,
-          "type": "solid"
-        }
-      ],
-      "key": "@co"
-    },
-    {
-      "name": "Alternate: Nuclear Fuel Unit",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Nuclear Fuel Rod",
-          "amount": 0.6,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Encased Uranium Cell",
-          "amount": 10,
-          "type": "solid"
-        },
-        {
-          "item": "Electromagnetic Control Rod",
-          "amount": 2,
-          "type": "solid"
-        },
-        {
-          "item": "Crystal Oscillator",
-          "amount": 0.6,
-          "type": "solid"
-        },
-        {
-          "item": "Beacon",
-          "amount": 1.2,
-          "type": "solid"
-        }
-      ],
-      "key": "@nu"
-    },
-    {
-      "name": "Alternate: Plastic Smart Plating",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Smart Plating",
-          "amount": 5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Reinforced Iron Plate",
-          "amount": 2.5,
-          "type": "solid"
-        },
-        {
-          "item": "Rotor",
-          "amount": 2.5,
-          "type": "solid"
-        },
-        {
-          "item": "Plastic",
-          "amount": 7.5,
-          "type": "solid"
-        }
-      ],
-      "key": "@sm"
-    },
-    {
-      "name": "Alternate: Radio Control System",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Radio Control Unit",
-          "amount": 3.8,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Heat Sink",
-          "amount": 12.5,
-          "type": "solid"
-        },
-        {
-          "item": "Supercomputer",
-          "amount": 1.3,
-          "type": "solid"
-        },
-        {
-          "item": "Quartz Crystal",
-          "amount": 37.5,
-          "type": "solid"
-        }
-      ],
-      "key": "@rc"
-    },
-    {
-      "name": "Alternate: Rigour Motor",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Motor",
-          "amount": 7.5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Rotor",
-          "amount": 3.8,
-          "type": "solid"
-        },
-        {
-          "item": "Stator",
-          "amount": 3.8,
-          "type": "solid"
-        },
-        {
-          "item": "Crystal Oscillator",
-          "amount": 1.3,
-          "type": "solid"
-        }
-      ],
-      "key": "@rm"
-    },
-    {
-      "name": "Alternate: Seismic Nobelisk",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Nobelisk",
-          "amount": 6,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Black Powder",
-          "amount": 12,
-          "type": "solid"
-        },
-        {
-          "item": "Steel Pipe",
-          "amount": 12,
-          "type": "solid"
-        },
-        {
-          "item": "Crystal Oscillator",
-          "amount": 1.5,
-          "type": "solid"
-        }
-      ],
-      "key": "@sn"
-    },
-    {
-      "name": "Alternate: Silicone High-Speed Connector",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "High-Speed Connector",
-          "amount": 3,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Quickwire",
-          "amount": 90,
-          "type": "solid"
-        },
-        {
-          "item": "Silica",
-          "amount": 37.5,
-          "type": "solid"
-        },
-        {
-          "item": "Circuit Board",
-          "amount": 3,
-          "type": "solid"
-        }
-      ],
-      "key": "@sh"
-    },
-    {
-      "name": "Alternate: Turbo Rigour Motor",
-      "machineType": "manufacturer",
-      "outputs": [
-        {
-          "item": "Turbo Motor",
-          "amount": 2.8,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Motor",
-          "amount": 6.6,
-          "type": "solid"
-        },
-        {
-          "item": "Radio Control Unit",
-          "amount": 4.7,
-          "type": "solid"
-        },
-        {
-          "item": "A.I. Limiter",
-          "amount": 8.4,
-          "type": "solid"
-        },
-        {
-          "item": "Stator",
-          "amount": 6.6,
-          "type": "solid"
-        }
-      ],
-      "key": "@tm"
-    },
-    {
-      "name": "Alternate: Coated Cable",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Cable",
-          "amount": 67.5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Wire",
-          "amount": 37.5,
-          "type": "solid"
-        },
-        {
-          "item": "Heavy Oil Residue",
-          "amount": 15,
-          "type": "fluid"
-        }
-      ],
-      "key": "@oc"
-    },
-    {
-      "name": "Alternate: Diluted Packaged Fuel",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Packaged Fuel",
-          "amount": 60,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Heavy Oil Residue",
-          "amount": 30,
-          "type": "fluid"
-        },
-        {
-          "item": "Packaged Water",
-          "amount": 60,
-          "type": "solid"
-        }
-      ],
-      "key": "@df"
-    },
-    {
-      "name": "Alternate: Electrode-Aluminum Scrap",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Aluminum Scrap",
-          "amount": 150,
-          "type": "solid"
-        },
-        {
-          "item": "Water",
-          "amount": 30,
-          "type": "fluid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Alumina Solution",
-          "amount": 90,
-          "type": "fluid"
-        },
-        {
-          "item": "Coal",
-          "amount": 30,
-          "type": "solid"
-        }
-      ],
-      "key": "@es"
-    },
-    {
-      "name": "Alternate: Heavy Oil Residue",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Heavy Oil Residue",
-          "amount": 40,
-          "type": "fluid"
-        },
-        {
-          "item": "Polymer Resin",
-          "amount": 20,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Crude Oil",
-          "amount": 30,
-          "type": "fluid"
-        }
-      ],
-      "key": "@hr"
-    },
-    {
-      "name": "Alternate: Polyester Fabric",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Fabric",
-          "amount": 5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Polymer Resin",
-          "amount": 80,
-          "type": "solid"
-        },
-        {
-          "item": "Water",
-          "amount": 50,
-          "type": "fluid"
-        }
-      ],
-      "key": "@pf"
-    },
-    {
-      "name": "Alternate: Polymer Resin",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Polymer Resin",
-          "amount": 130,
-          "type": "solid"
-        },
-        {
-          "item": "Heavy Oil Residue",
-          "amount": 20,
-          "type": "fluid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Crude Oil",
-          "amount": 60,
-          "type": "fluid"
-        }
-      ],
-      "key": "@pr"
-    },
-    {
-      "name": "Alternate: Pure Caterium Ingot",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Caterium Ingot",
-          "amount": 12,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Caterium Ore",
-          "amount": 24,
-          "type": "solid"
-        },
-        {
-          "item": "Water",
-          "amount": 24,
-          "type": "fluid"
-        }
-      ],
-      "key": "@pa"
-    },
-    {
-      "name": "Alternate: Pure Copper Ingot",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Copper Ingot",
-          "amount": 37.5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Copper Ore",
-          "amount": 15,
-          "type": "solid"
-        },
-        {
-          "item": "Water",
-          "amount": 10,
-          "type": "fluid"
-        }
-      ],
-      "key": "@pc"
-    },
-    {
-      "name": "Alternate: Pure Iron Ingot",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Iron Ingot",
-          "amount": 65,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Iron Ore",
-          "amount": 35,
-          "type": "solid"
-        },
-        {
-          "item": "Water",
-          "amount": 20,
-          "type": "fluid"
-        }
-      ],
-      "key": "@pi"
-    },
-    {
-      "name": "Alternate: Pure Quartz Crystal",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Quartz Crystal",
-          "amount": 52.5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Raw Quartz",
-          "amount": 67.5,
-          "type": "solid"
-        },
-        {
-          "item": "Water",
-          "amount": 37.5,
-          "type": "fluid"
-        }
-      ],
-      "key": "@pq"
-    },
-    {
-      "name": "Alternate: Recycled Plastic",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Plastic",
-          "amount": 60,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Rubber",
-          "amount": 30,
-          "type": "solid"
-        },
-        {
-          "item": "Fuel",
-          "amount": 30,
-          "type": "fluid"
-        }
-      ],
-      "key": "@rp"
-    },
-    {
-      "name": "Alternate: Recycled Rubber",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Rubber",
-          "amount": 60,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Plastic",
-          "amount": 30,
-          "type": "solid"
-        },
-        {
-          "item": "Fuel",
-          "amount": 30,
-          "type": "fluid"
-        }
-      ],
-      "key": "@rr"
-    },
-    {
-      "name": "Alternate: Steamed Copper Sheet",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Copper Sheet",
-          "amount": 22.5,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Copper Ingot",
-          "amount": 22.5,
-          "type": "solid"
-        },
-        {
-          "item": "Water",
-          "amount": 22.5,
-          "type": "fluid"
-        }
-      ],
-      "key": "@st"
-    },
-    {
-      "name": "Alternate: Turbo Heavy Fuel",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Turbofuel",
-          "amount": 30,
-          "type": "fluid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Heavy Oil Residue",
-          "amount": 37.5,
-          "type": "fluid"
-        },
-        {
-          "item": "Compacted Coal",
-          "amount": 30,
-          "type": "solid"
-        }
-      ],
-      "key": "@th"
-    },
-    {
-      "name": "Alternate: Turbofuel",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Turbofuel",
-          "amount": 18.8,
-          "type": "fluid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Fuel",
-          "amount": 22.5,
-          "type": "fluid"
-        },
-        {
-          "item": "Compacted Coal",
-          "amount": 15,
-          "type": "solid"
-        }
-      ],
-      "key": "@tf"
-    },
-    {
-      "name": "Alternate: Wet Concrete",
-      "machineType": "refinery",
-      "outputs": [
-        {
-          "item": "Concrete",
-          "amount": 80,
-          "type": "solid"
-        }
-      ],
-      "inputs": [
-        {
-          "item": "Limestone",
-          "amount": 120,
-          "type": "solid"
-        },
-        {
-          "item": "Water",
-          "amount": 100,
-          "type": "fluid"
-        }
-      ],
-      "key": "@wc"
-    }
-  ]
+{
+  "@cs": {
+    "name": "Alternate: Coke Steel Ingot",
+    "machineType": "foundry",
+    "outputs": [
+      {
+        "item": "Steel Ingot",
+        "amount": 100,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Iron Ore",
+        "amount": 75,
+        "type": "solid"
+      },
+      {
+        "item": "Petroleum Coke",
+        "amount": 75,
+        "type": "solid"
+      }
+    ]
+  },
+  "@ms": {
+    "name": "Alternate: Compacted Steel Ingot",
+    "machineType": "foundry",
+    "outputs": [
+      {
+        "item": "Steel Ingot",
+        "amount": 37.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Iron Ore",
+        "amount": 22.5,
+        "type": "solid"
+      },
+      {
+        "item": "Compacted Coal",
+        "amount": 11.3,
+        "type": "solid"
+      }
+    ]
+  },
+  "@ca": {
+    "name": "Alternate: Copper Alloy Ingot",
+    "machineType": "foundry",
+    "outputs": [
+      {
+        "item": "Copper Ingot",
+        "amount": 100,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Copper Ore",
+        "amount": 50,
+        "type": "solid"
+      },
+      {
+        "item": "Iron Ore",
+        "amount": 25,
+        "type": "solid"
+      }
+    ]
+  },
+  "@ia": {
+    "name": "Alternate: Iron Alloy Ingot",
+    "machineType": "foundry",
+    "outputs": [
+      {
+        "item": "Iron Ingot",
+        "amount": 50,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Iron Ore",
+        "amount": 20,
+        "type": "solid"
+      },
+      {
+        "item": "Copper Ore",
+        "amount": 20,
+        "type": "solid"
+      }
+    ]
+  },
+  "@ss": {
+    "name": "Alternate: Solid Steel Ingot",
+    "machineType": "foundry",
+    "outputs": [
+      {
+        "item": "Steel Ingot",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Iron Ingot",
+        "amount": 40,
+        "type": "solid"
+      },
+      {
+        "item": "Coal",
+        "amount": 40,
+        "type": "solid"
+      }
+    ]
+  },
+  "@bc": {
+    "name": "Alternate: Biocoal",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "item": "Coal",
+        "amount": 45,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Biomass",
+        "amount": 37.5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@sc": {
+    "name": "Alternate: Casted Screw",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "item": "Screw",
+        "amount": 50,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Iron Ingot",
+        "amount": 12.5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@cw": {
+    "name": "Alternate: Caterium Wire",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "item": "Wire",
+        "amount": 120,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Caterium Ingot",
+        "amount": 15,
+        "type": "solid"
+      }
+    ]
+  },
+  "@ch": {
+    "name": "Alternate: Charcoal",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "item": "Coal",
+        "amount": 150,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Wood",
+        "amount": 15,
+        "type": "solid"
+      }
+    ]
+  },
+  "@iw": {
+    "name": "Alternate: Iron Wire",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "item": "Wire",
+        "amount": 22.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Iron Ingot",
+        "amount": 12.5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@sr": {
+    "name": "Alternate: Steel Rod",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "item": "Iron Rod",
+        "amount": 48,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Steel Ingot",
+        "amount": 12,
+        "type": "solid"
+      }
+    ]
+  },
+  "@ts": {
+    "name": "Alternate: Steel Screw",
+    "machineType": "constructor",
+    "outputs": [
+      {
+        "item": "Screw",
+        "amount": 260,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Steel Beam",
+        "amount": 5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@ap": {
+    "name": "Alternate: Adhered Iron Plate",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Reinforced Iron Plate",
+        "amount": 3.8,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Iron Plate",
+        "amount": 11.3,
+        "type": "solid"
+      },
+      {
+        "item": "Rubber",
+        "amount": 3.8,
+        "type": "solid"
+      }
+    ]
+  },
+  "@bf": {
+    "name": "Alternate: Bolted Frame",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Modular Frame",
+        "amount": 5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Reinforced Iron Plate",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "item": "Screw",
+        "amount": 140,
+        "type": "solid"
+      }
+    ]
+  },
+  "@bp": {
+    "name": "Alternate: Bolted Iron Plate",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Reinforced Iron Plate",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Iron Plate",
+        "amount": 90,
+        "type": "solid"
+      },
+      {
+        "item": "Screw",
+        "amount": 250,
+        "type": "solid"
+      }
+    ]
+  },
+  "@cd": {
+    "name": "Alternate: Caterium Circuit Board",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Circuit Board",
+        "amount": 8.8,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Plastic",
+        "amount": 12.5,
+        "type": "solid"
+      },
+      {
+        "item": "Quickwire",
+        "amount": 37.5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@$s": {
+    "name": "Alternate: Cheap Silica",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Silica",
+        "amount": 26.3,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Raw Quartz",
+        "amount": 11.3,
+        "type": "solid"
+      },
+      {
+        "item": "Limestone",
+        "amount": 18.8,
+        "type": "solid"
+      }
+    ]
+  },
+  "@cp": {
+    "name": "Alternate: Coated Iron Plate",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Iron Plate",
+        "amount": 75,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Iron Ingot",
+        "amount": 50,
+        "type": "solid"
+      },
+      {
+        "item": "Plastic",
+        "amount": 10,
+        "type": "solid"
+      }
+    ]
+  },
+  "@cc": {
+    "name": "Alternate: Compacted Coal",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Compacted Coal",
+        "amount": 25,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Coal",
+        "amount": 25,
+        "type": "solid"
+      },
+      {
+        "item": "Sulfur",
+        "amount": 25,
+        "type": "solid"
+      }
+    ]
+  },
+  "@cr": {
+    "name": "Alternate: Copper Rotor",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Rotor",
+        "amount": 11.3,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Copper Sheet",
+        "amount": 22.5,
+        "type": "solid"
+      },
+      {
+        "item": "Screw",
+        "amount": 195,
+        "type": "solid"
+      }
+    ]
+  },
+  "@cm": {
+    "name": "Alternate: Crystal Computer",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Computer",
+        "amount": 2.8,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Circuit Board",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "item": "Crystal Oscillator",
+        "amount": 2.8,
+        "type": "solid"
+      }
+    ]
+  },
+  "@eb": {
+    "name": "Alternate: Electrode Circuit Board",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Circuit Board",
+        "amount": 5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Rubber",
+        "amount": 30,
+        "type": "solid"
+      },
+      {
+        "item": "Petroleum Coke",
+        "amount": 45,
+        "type": "solid"
+      }
+    ]
+  },
+  "@ec": {
+    "name": "Alternate: Electromagnetic Connection Rod",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Electromagnetic Control Rod",
+        "amount": 10,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Stator",
+        "amount": 10,
+        "type": "solid"
+      },
+      {
+        "item": "High-Speed Connector",
+        "amount": 5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@ep": {
+    "name": "Alternate: Encased Industrial Pipe",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Encased Industrial Beam",
+        "amount": 4,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Steel Pipe",
+        "amount": 28,
+        "type": "solid"
+      },
+      {
+        "item": "Concrete",
+        "amount": 20,
+        "type": "solid"
+      }
+    ]
+  },
+  "@fc": {
+    "name": "Alternate: Fine Concrete",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Concrete",
+        "amount": 25,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Silica",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "item": "Limestone",
+        "amount": 30,
+        "type": "solid"
+      }
+    ]
+  },
+  "@fq": {
+    "name": "Alternate: Fused Quickwire",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Quickwire",
+        "amount": 90,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Caterium Ingot",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "item": "Copper Ingot",
+        "amount": 37.5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@fw": {
+    "name": "Alternate: Fused Wire",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Wire",
+        "amount": 90,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Copper Ingot",
+        "amount": 12,
+        "type": "solid"
+      },
+      {
+        "item": "Caterium Ingot",
+        "amount": 3,
+        "type": "solid"
+      }
+    ]
+  },
+  "@gp": {
+    "name": "Alternate: Gun Powder",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Black Powder",
+        "amount": 15,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Sulfur",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "item": "Compacted Coal",
+        "amount": 3.8,
+        "type": "solid"
+      }
+    ]
+  },
+  "@he": {
+    "name": "Alternate: Heat Exchanger",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Heat Sink",
+        "amount": 13.1,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Alclad Aluminum Sheet",
+        "amount": 37.5,
+        "type": "solid"
+      },
+      {
+        "item": "Copper Sheet",
+        "amount": 56.3,
+        "type": "solid"
+      }
+    ]
+  },
+  "@ic": {
+    "name": "Alternate: Insulated Cable",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Cable",
+        "amount": 100,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Wire",
+        "amount": 45,
+        "type": "solid"
+      },
+      {
+        "item": "Rubber",
+        "amount": 30,
+        "type": "solid"
+      }
+    ]
+  },
+  "@qc": {
+    "name": "Alternate: Quickwire Cable",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Cable",
+        "amount": 27.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Quickwire",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "item": "Rubber",
+        "amount": 5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@qs": {
+    "name": "Alternate: Quickwire Stator",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Stator",
+        "amount": 8,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Steel Pipe",
+        "amount": 16,
+        "type": "solid"
+      },
+      {
+        "item": "Quickwire",
+        "amount": 60,
+        "type": "solid"
+      }
+    ]
+  },
+  "@rc": {
+    "name": "Alternate: Rubber Concrete",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Concrete",
+        "amount": 45,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Limestone",
+        "amount": 50,
+        "type": "solid"
+      },
+      {
+        "item": "Rubber",
+        "amount": 10,
+        "type": "solid"
+      }
+    ]
+  },
+  "@sb": {
+    "name": "Alternate: Silicone Circuit Board",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Circuit Board",
+        "amount": 12.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Copper Sheet",
+        "amount": 27.5,
+        "type": "solid"
+      },
+      {
+        "item": "Silica",
+        "amount": 27.5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@sp": {
+    "name": "Alternate: Steel Coated Plate",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Iron Plate",
+        "amount": 45,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Steel Ingot",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "item": "Plastic",
+        "amount": 5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@so": {
+    "name": "Alternate: Steel Rotor",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Rotor",
+        "amount": 5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Steel Pipe",
+        "amount": 10,
+        "type": "solid"
+      },
+      {
+        "item": "Wire",
+        "amount": 30,
+        "type": "solid"
+      }
+    ]
+  },
+  "@sf": {
+    "name": "Alternate: Steeled Frame",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Modular Frame",
+        "amount": 3,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Reinforced Iron Plate",
+        "amount": 2,
+        "type": "solid"
+      },
+      {
+        "item": "Steel Pipe",
+        "amount": 10,
+        "type": "solid"
+      }
+    ]
+  },
+  "@tp": {
+    "name": "Alternate: Stitched Iron Plate",
+    "machineType": "assembler",
+    "outputs": [
+      {
+        "item": "Reinforced Iron Plate",
+        "amount": 5.625,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Iron Plate",
+        "amount": 18.75,
+        "type": "solid"
+      },
+      {
+        "item": "Wire",
+        "amount": 37.5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@aw": {
+    "name": "Alternate: Automated Speed Wiring",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Automated Wiring",
+        "amount": 7.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Stator",
+        "amount": 3.8,
+        "type": "solid"
+      },
+      {
+        "item": "Wire",
+        "amount": 75,
+        "type": "solid"
+      },
+      {
+        "item": "High-Speed Connector",
+        "amount": 1.9,
+        "type": "solid"
+      }
+    ]
+  },
+  "@am": {
+    "name": "Alternate: Caterium Computer",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Computer",
+        "amount": 3.8,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Circuit Board",
+        "amount": 26.3,
+        "type": "solid"
+      },
+      {
+        "item": "Quickwire",
+        "amount": 105,
+        "type": "solid"
+      },
+      {
+        "item": "Rubber",
+        "amount": 45,
+        "type": "solid"
+      }
+    ]
+  },
+  "@cb": {
+    "name": "Alternate: Crystal Beacon",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Beacon",
+        "amount": 10,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Steel Beam",
+        "amount": 2,
+        "type": "solid"
+      },
+      {
+        "item": "Steel Pipe",
+        "amount": 8,
+        "type": "solid"
+      },
+      {
+        "item": "Crystal Oscillator",
+        "amount": 0.5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@ff": {
+    "name": "Alternate: Flexible Framework",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Versatile Framework",
+        "amount": 7.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Modular Frame",
+        "amount": 3.8,
+        "type": "solid"
+      },
+      {
+        "item": "Steel Beam",
+        "amount": 22.5,
+        "type": "solid"
+      },
+      {
+        "item": "Rubber",
+        "amount": 30,
+        "type": "solid"
+      }
+    ]
+  },
+  "@hf": {
+    "name": "Alternate: Heavy Encased Frame",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Heavy Modular Frame",
+        "amount": 2.8,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Modular Frame",
+        "amount": 7.5,
+        "type": "solid"
+      },
+      {
+        "item": "Encased Industrial Frame",
+        "amount": 9.4,
+        "type": "solid"
+      },
+      {
+        "item": "Steel Pipe",
+        "amount": 33.8,
+        "type": "solid"
+      },
+      {
+        "item": "Concrete",
+        "amount": 20.6,
+        "type": "solid"
+      }
+    ]
+  },
+  "@hx": {
+    "name": "Alternate: Heavy Flexible Frame",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Heavy Modular Frame",
+        "amount": 3.8,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Modular Frame",
+        "amount": 18.8,
+        "type": "solid"
+      },
+      {
+        "item": "Encased Industrial Beam",
+        "amount": 11.3,
+        "type": "solid"
+      },
+      {
+        "item": "Rubber",
+        "amount": 75,
+        "type": "solid"
+      },
+      {
+        "item": "Screw",
+        "amount": 390,
+        "type": "solid"
+      }
+    ]
+  },
+  "@uc": {
+    "name": "Alternate: Infused Uranium Cell",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Encased Uranium Cell",
+        "amount": 17.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Uranium Pellet",
+        "amount": 20,
+        "type": "solid"
+      },
+      {
+        "item": "Sulfur",
+        "amount": 22.5,
+        "type": "solid"
+      },
+      {
+        "item": "Silica",
+        "amount": 22.5,
+        "type": "solid"
+      },
+      {
+        "item": "Quickwire",
+        "amount": 37.5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@co": {
+    "name": "Alternate: Insulated Crystal Oscillator",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Crystal Oscillator",
+        "amount": 1.9,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Quartz Crystal",
+        "amount": 18.8,
+        "type": "solid"
+      },
+      {
+        "item": "Rubber",
+        "amount": 13.1,
+        "type": "solid"
+      },
+      {
+        "item": "A.I. Limiter",
+        "amount": 1.9,
+        "type": "solid"
+      }
+    ]
+  },
+  "@nu": {
+    "name": "Alternate: Nuclear Fuel Unit",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Nuclear Fuel Rod",
+        "amount": 0.6,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Encased Uranium Cell",
+        "amount": 10,
+        "type": "solid"
+      },
+      {
+        "item": "Electromagnetic Control Rod",
+        "amount": 2,
+        "type": "solid"
+      },
+      {
+        "item": "Crystal Oscillator",
+        "amount": 0.6,
+        "type": "solid"
+      },
+      {
+        "item": "Beacon",
+        "amount": 1.2,
+        "type": "solid"
+      }
+    ]
+  },
+  "@sm": {
+    "name": "Alternate: Plastic Smart Plating",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Smart Plating",
+        "amount": 5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Reinforced Iron Plate",
+        "amount": 2.5,
+        "type": "solid"
+      },
+      {
+        "item": "Rotor",
+        "amount": 2.5,
+        "type": "solid"
+      },
+      {
+        "item": "Plastic",
+        "amount": 7.5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@rs": {
+    "name": "Alternate: Radio Control System",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Radio Control Unit",
+        "amount": 3.8,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Heat Sink",
+        "amount": 12.5,
+        "type": "solid"
+      },
+      {
+        "item": "Supercomputer",
+        "amount": 1.3,
+        "type": "solid"
+      },
+      {
+        "item": "Quartz Crystal",
+        "amount": 37.5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@rm": {
+    "name": "Alternate: Rigour Motor",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Motor",
+        "amount": 7.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Rotor",
+        "amount": 3.8,
+        "type": "solid"
+      },
+      {
+        "item": "Stator",
+        "amount": 3.8,
+        "type": "solid"
+      },
+      {
+        "item": "Crystal Oscillator",
+        "amount": 1.3,
+        "type": "solid"
+      }
+    ]
+  },
+  "@sn": {
+    "name": "Alternate: Seismic Nobelisk",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Nobelisk",
+        "amount": 6,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Black Powder",
+        "amount": 12,
+        "type": "solid"
+      },
+      {
+        "item": "Steel Pipe",
+        "amount": 12,
+        "type": "solid"
+      },
+      {
+        "item": "Crystal Oscillator",
+        "amount": 1.5,
+        "type": "solid"
+      }
+    ]
+  },
+  "@sh": {
+    "name": "Alternate: Silicone High-Speed Connector",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "High-Speed Connector",
+        "amount": 3,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Quickwire",
+        "amount": 90,
+        "type": "solid"
+      },
+      {
+        "item": "Silica",
+        "amount": 37.5,
+        "type": "solid"
+      },
+      {
+        "item": "Circuit Board",
+        "amount": 3,
+        "type": "solid"
+      }
+    ]
+  },
+  "@tm": {
+    "name": "Alternate: Turbo Rigour Motor",
+    "machineType": "manufacturer",
+    "outputs": [
+      {
+        "item": "Turbo Motor",
+        "amount": 2.8,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Motor",
+        "amount": 6.6,
+        "type": "solid"
+      },
+      {
+        "item": "Radio Control Unit",
+        "amount": 4.7,
+        "type": "solid"
+      },
+      {
+        "item": "A.I. Limiter",
+        "amount": 8.4,
+        "type": "solid"
+      },
+      {
+        "item": "Stator",
+        "amount": 6.6,
+        "type": "solid"
+      }
+    ]
+  },
+  "@oc": {
+    "name": "Alternate: Coated Cable",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Cable",
+        "amount": 67.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Wire",
+        "amount": 37.5,
+        "type": "solid"
+      },
+      {
+        "item": "Heavy Oil Residue",
+        "amount": 15,
+        "type": "fluid"
+      }
+    ]
+  },
+  "@df": {
+    "name": "Alternate: Diluted Packaged Fuel",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Packaged Fuel",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Heavy Oil Residue",
+        "amount": 30,
+        "type": "fluid"
+      },
+      {
+        "item": "Packaged Water",
+        "amount": 60,
+        "type": "solid"
+      }
+    ]
+  },
+  "@es": {
+    "name": "Alternate: Electrode-Aluminum Scrap",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Aluminum Scrap",
+        "amount": 150,
+        "type": "solid"
+      },
+      {
+        "item": "Water",
+        "amount": 30,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Alumina Solution",
+        "amount": 90,
+        "type": "fluid"
+      },
+      {
+        "item": "Coal",
+        "amount": 30,
+        "type": "solid"
+      }
+    ]
+  },
+  "@hr": {
+    "name": "Alternate: Heavy Oil Residue",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Heavy Oil Residue",
+        "amount": 40,
+        "type": "fluid"
+      },
+      {
+        "item": "Polymer Resin",
+        "amount": 20,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Crude Oil",
+        "amount": 30,
+        "type": "fluid"
+      }
+    ]
+  },
+  "@pf": {
+    "name": "Alternate: Polyester Fabric",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Fabric",
+        "amount": 5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Polymer Resin",
+        "amount": 80,
+        "type": "solid"
+      },
+      {
+        "item": "Water",
+        "amount": 50,
+        "type": "fluid"
+      }
+    ]
+  },
+  "@pr": {
+    "name": "Alternate: Polymer Resin",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Polymer Resin",
+        "amount": 130,
+        "type": "solid"
+      },
+      {
+        "item": "Heavy Oil Residue",
+        "amount": 20,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Crude Oil",
+        "amount": 60,
+        "type": "fluid"
+      }
+    ]
+  },
+  "@pa": {
+    "name": "Alternate: Pure Caterium Ingot",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Caterium Ingot",
+        "amount": 12,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Caterium Ore",
+        "amount": 24,
+        "type": "solid"
+      },
+      {
+        "item": "Water",
+        "amount": 24,
+        "type": "fluid"
+      }
+    ]
+  },
+  "@pc": {
+    "name": "Alternate: Pure Copper Ingot",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Copper Ingot",
+        "amount": 37.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Copper Ore",
+        "amount": 15,
+        "type": "solid"
+      },
+      {
+        "item": "Water",
+        "amount": 10,
+        "type": "fluid"
+      }
+    ]
+  },
+  "@pi": {
+    "name": "Alternate: Pure Iron Ingot",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Iron Ingot",
+        "amount": 65,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Iron Ore",
+        "amount": 35,
+        "type": "solid"
+      },
+      {
+        "item": "Water",
+        "amount": 20,
+        "type": "fluid"
+      }
+    ]
+  },
+  "@pq": {
+    "name": "Alternate: Pure Quartz Crystal",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Quartz Crystal",
+        "amount": 52.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Raw Quartz",
+        "amount": 67.5,
+        "type": "solid"
+      },
+      {
+        "item": "Water",
+        "amount": 37.5,
+        "type": "fluid"
+      }
+    ]
+  },
+  "@rp": {
+    "name": "Alternate: Recycled Plastic",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Plastic",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Rubber",
+        "amount": 30,
+        "type": "solid"
+      },
+      {
+        "item": "Fuel",
+        "amount": 30,
+        "type": "fluid"
+      }
+    ]
+  },
+  "@rr": {
+    "name": "Alternate: Recycled Rubber",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Rubber",
+        "amount": 60,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Plastic",
+        "amount": 30,
+        "type": "solid"
+      },
+      {
+        "item": "Fuel",
+        "amount": 30,
+        "type": "fluid"
+      }
+    ]
+  },
+  "@st": {
+    "name": "Alternate: Steamed Copper Sheet",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Copper Sheet",
+        "amount": 22.5,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Copper Ingot",
+        "amount": 22.5,
+        "type": "solid"
+      },
+      {
+        "item": "Water",
+        "amount": 22.5,
+        "type": "fluid"
+      }
+    ]
+  },
+  "@th": {
+    "name": "Alternate: Turbo Heavy Fuel",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Turbofuel",
+        "amount": 30,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Heavy Oil Residue",
+        "amount": 37.5,
+        "type": "fluid"
+      },
+      {
+        "item": "Compacted Coal",
+        "amount": 30,
+        "type": "solid"
+      }
+    ]
+  },
+  "@tf": {
+    "name": "Alternate: Turbofuel",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Turbofuel",
+        "amount": 18.8,
+        "type": "fluid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Fuel",
+        "amount": 22.5,
+        "type": "fluid"
+      },
+      {
+        "item": "Compacted Coal",
+        "amount": 15,
+        "type": "solid"
+      }
+    ]
+  },
+  "@wc": {
+    "name": "Alternate: Wet Concrete",
+    "machineType": "refinery",
+    "outputs": [
+      {
+        "item": "Concrete",
+        "amount": 80,
+        "type": "solid"
+      }
+    ],
+    "inputs": [
+      {
+        "item": "Limestone",
+        "amount": 120,
+        "type": "solid"
+      },
+      {
+        "item": "Water",
+        "amount": 100,
+        "type": "fluid"
+      }
+    ]
+  }
+}
