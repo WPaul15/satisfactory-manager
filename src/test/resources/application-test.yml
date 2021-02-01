@@ -1,0 +1,4 @@
+# Turn off Spring banner
+spring:
+  main:
+    banner-mode: off
