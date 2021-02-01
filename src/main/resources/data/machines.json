@@ -58,7 +58,7 @@
   },
   "oi": {
     "name": "Oil Extractor",
-    "type": "Machine",
+    "type": "Miner",
     "category": "production",
     "power": -40,
     "rate": 120
