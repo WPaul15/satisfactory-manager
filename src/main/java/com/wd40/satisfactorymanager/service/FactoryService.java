@@ -3,6 +3,7 @@ package com.wd40.satisfactorymanager.service;
 import com.wd40.satisfactorymanager.model.Factory;
 import com.wd40.satisfactorymanager.model.MachineGroup;
 import com.wd40.satisfactorymanager.repository.FactoryRepository;
+import java.util.HashMap;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,7 +23,12 @@ public class FactoryService {
   }
 
   public Factory createNewFactory(String name) {
-    return factoryRepository.save(new Factory(name));
+    Factory factory = new Factory(name);
+    Map<String, MachineGroup> machines = new HashMap<>();
+    machines.put("amh", new MachineGroup("Miner", 2, 100, "Iron Ore"));
+    factory.setMachineGroups(machines);
+
+    return factoryRepository.save(factory);
   }
 
   public Factory addMachine(
@@ -32,7 +38,7 @@ public class FactoryService {
       int newClock,
       int count,
       String newQuality) {
-    Map<String, MachineGroup> machines = factory.getMachines();
+    Map<String, MachineGroup> machines = factory.getMachineGroups();
     String newKey = getKey(newMachineType, newRecipe, newClock, newQuality);
     if (machines.containsKey(newKey)) {
       machines.get(newKey).updateCount(count);
@@ -43,7 +49,7 @@ public class FactoryService {
   }
 
   public Factory removeMachine(Factory factory, String machineKey, int count) {
-    Map<String, MachineGroup> machines = factory.getMachines();
+    Map<String, MachineGroup> machines = factory.getMachineGroups();
     if (machines.get(machineKey).getCount() > count) {
       machines.get(machineKey).updateCount(-count);
     } else if (machines.get(machineKey).getCount() <= count) {
@@ -54,7 +60,7 @@ public class FactoryService {
 
   public Factory editMachine(
       Factory factory, String machineKey, String newRecipe, int newClock, String newQuality) {
-    Map<String, MachineGroup> machines = factory.getMachines();
+    Map<String, MachineGroup> machines = factory.getMachineGroups();
     String machineType = machines.get(machineKey).getMachineType();
     int count = machines.get(machineKey).getCount();
     removeMachine(factory, machineKey, count);

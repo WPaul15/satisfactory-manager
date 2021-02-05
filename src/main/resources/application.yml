@@ -17,3 +17,5 @@ spring:
 
 data:
   recipes-file: "file:${RECIPES_FILE_PATH:src/main/resources/data/recipes.json}"
+  alt-recipes-file: "file:${ALT_RECIPES_FILE_PATH:src/main/resources/data/alt-recipes.json}"
+  machines-file: "file:${ALT_RECIPES_FILE_PATH:src/main/resources/data/machines.json}"

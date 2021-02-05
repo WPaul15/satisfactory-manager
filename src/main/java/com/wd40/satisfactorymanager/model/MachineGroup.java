@@ -1,5 +1,6 @@
 package com.wd40.satisfactorymanager.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,17 +14,19 @@ public class MachineGroup {
   private Integer id;
 
   private int count;
-  private double clockSpeed = 1.0;
+  private int clockSpeed = 100;
   // TODO: Add recipes
   private String recipe;
   private String machineType;
+  @JsonIgnore private String key;
 
   public MachineGroup() {}
 
-  public MachineGroup(String machineType, int count, double clockSpeed, String recipe) {
+  public MachineGroup(String machineType, int count, int clockSpeed, String recipe) {
     this.count = count;
     this.clockSpeed = clockSpeed;
     this.recipe = recipe;
+    this.key = generateKey();
   }
 
   public int getCount() {
@@ -34,11 +37,11 @@ public class MachineGroup {
     this.count = count;
   }
 
-  public double getClockSpeed() {
+  public int getClockSpeed() {
     return clockSpeed;
   }
 
-  public void setClockSpeed(double clockSpeed) {
+  public void setClockSpeed(int clockSpeed) {
     this.clockSpeed = clockSpeed;
   }
 
@@ -48,5 +51,17 @@ public class MachineGroup {
 
   public String getMachineType() {
     return machineType;
+  }
+
+  public String getKey() {
+    return key;
+  }
+
+  public void setKey(String key) {
+    this.key = key;
+  }
+
+  private String generateKey() {
+    return "test";
   }
 }

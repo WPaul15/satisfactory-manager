@@ -1,0 +1,241 @@
+{
+  "m1": {
+    "name": "Miner Mk. 1",
+    "type": "Miner",
+    "category": "production",
+    "power": -5,
+    "rate": 60
+  },
+  "m2": {
+    "name": "Miner Mk. 2",
+    "type": "Miner",
+    "category": "production",
+    "power": -12,
+    "rate": 120
+  },
+  "m3": {
+    "name": "Miner Mk. 3",
+    "type": "Miner",
+    "category": "production",
+    "power": -30,
+    "rate": 240
+  },
+  "sml": {
+    "name": "Smelter",
+    "type": "Machine",
+    "category": "production",
+    "power": -4
+  },
+  "fnd": {
+    "name": "Foundry",
+    "type": "Machine",
+    "category": "production",
+    "power": -16
+  },
+  "con": {
+    "name": "Constructor",
+    "type": "Machine",
+    "category": "production",
+    "power": -4
+  },
+  "asm": {
+    "name": "Assembler",
+    "type": "Machine",
+    "category": "production",
+    "power": -15
+  },
+  "man": {
+    "name": "Manufacturer",
+    "type": "Machine",
+    "category": "production",
+    "power": -55
+  },
+  "wat": {
+    "name": "Water Extractor",
+    "type": "Machine",
+    "category": "production",
+    "power": -20
+  },
+  "oi": {
+    "name": "Oil Extractor",
+    "type": "Miner",
+    "category": "production",
+    "power": -40,
+    "rate": 120
+  },
+  "ref": {
+    "name": "Refinery",
+    "type": "Machine",
+    "category": "production",
+    "power": -30
+  },
+  "bgn": {
+    "name": "Biomass Burner",
+    "type": "Generator",
+    "category": "generation",
+    "power": 30,
+    "fuels": [
+      {
+        "name": "Leaves",
+        "burnTime": 0.5
+      },
+      {
+        "name": "Fabric",
+        "burnTime": 0.5
+      },
+      {
+        "name": "Mycelia",
+        "burnTime": 0.666
+      },
+      {
+        "name": "Wood",
+        "burnTime": 3.333
+      },
+      {
+        "name": "Flower Petals",
+        "burnTime": 3.333
+      },
+      {
+        "name": "Biomass",
+        "burnTime": 6
+      },
+      {
+        "name": "Alien Organs",
+        "burnTime": 8.333
+      },
+      {
+        "name": "Alien Carapace",
+        "burnTime": 8.333
+      },
+      {
+        "name": "Solid Biofuel",
+        "burnTime": 15
+      },
+      {
+        "name": "Packaged Liquid Biofuel",
+        "burnTime": 25
+      }
+    ]
+  },
+  "cgn": {
+    "name": "Coal Generator",
+    "type": "Generator",
+    "category": "generation",
+    "power": 75,
+    "fuels": [
+      {
+        "name": "Coal",
+        "burnTime": 4
+      },
+      {
+        "name": "Compacted Coal",
+        "burnTime": 8.4
+      },
+      {
+        "name": "Petroleum Coke",
+        "burnTime": 2.4
+      }
+    ],
+    "waterUsage": 45
+  },
+  "fgn": {
+    "name": "Fuel Generator",
+    "type": "Generator",
+    "category": "generation",
+    "power": 150,
+    "fuels": [
+      {
+        "name": "Fuel",
+        "burnTime": 4
+      },
+      {
+        "name": "Liquid Biofuel",
+        "burnTime": 5
+      },
+      {
+        "name": "Turbofuel",
+        "burnTime": 13.333
+      }
+    ]
+  },
+  "ggn": {
+    "name": "Geo Thermal Generator",
+    "type": "Generator",
+    "category": "generation",
+    "power": 200,
+    "fuels": []
+  },
+  "ngn": {
+    "name": "Nuclear Power Plant",
+    "type": "Generator",
+    "category": "generation",
+    "power": 2500,
+    "fuels": [
+      {
+        "name": "Nuclear Fuel Rod",
+        "burnTime": 300
+      }
+    ],
+    "waterUsage": 300
+  },
+  "snk": {
+    "name": "AWESOME Sink",
+    "type": "Machine",
+    "category": "misc",
+    "power": -30
+  },
+  "jmp": {
+    "name": "Jump Pad",
+    "type": "Machine",
+    "category": "misc",
+    "power": -5
+  },
+  "jly": {
+    "name": "U-Jelly Landing Pad",
+    "type": "Machine",
+    "category": "misc",
+    "power": -5
+  },
+  "pmp": {
+    "name": "Pipeline Pump",
+    "type": "Machine",
+    "category": "misc",
+    "power": -4
+  },
+  "rdr": {
+    "name": "Radar Tower",
+    "type": "Machine",
+    "category": "misc",
+    "power": -30
+  },
+  "hte": {
+    "name": "Hyper Tube Entrance",
+    "type": "Machine",
+    "category": "misc",
+    "power": -10
+  },
+  "tks": {
+    "name": "Truck Station",
+    "type": "Machine",
+    "category": "misc",
+    "power": -20
+  },
+  "elo": {
+    "name": "Electric Locomotive",
+    "type": "Machine",
+    "category": "misc",
+    "power": -110
+  },
+  "tns": {
+    "name": "Train Station",
+    "type": "Machine",
+    "category": "misc",
+    "power": -50
+  },
+  "fpt": {
+    "name": "Freight Platform",
+    "type": "Machine",
+    "category": "misc",
+    "power": -50
+  }
+}

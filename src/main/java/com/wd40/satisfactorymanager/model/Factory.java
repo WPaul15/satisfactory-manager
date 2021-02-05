@@ -2,11 +2,13 @@ package com.wd40.satisfactorymanager.model;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.persistence.ElementCollection;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.MapKey;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Factory {
@@ -17,13 +19,15 @@ public class Factory {
 
   private String name;
 
-  @ElementCollection private Map<String, MachineGroup> machines;
+  @OneToMany(cascade = CascadeType.ALL)
+  @MapKey(name = "key")
+  private Map<String, MachineGroup> machineGroups;
 
   public Factory() {}
 
   public Factory(String name) {
     this.name = name;
-    this.machines = new HashMap<>();
+    this.machineGroups = new HashMap<>();
   }
 
   public Integer getId() {
@@ -42,11 +46,11 @@ public class Factory {
     this.name = name;
   }
 
-  public Map<String, MachineGroup> getMachines() {
-    return machines;
+  public Map<String, MachineGroup> getMachineGroups() {
+    return machineGroups;
   }
 
-  public void setMachines(Map<String, MachineGroup> machines) {
-    this.machines = machines;
+  public void setMachineGroups(Map<String, MachineGroup> machineGroups) {
+    this.machineGroups = machineGroups;
   }
 }
