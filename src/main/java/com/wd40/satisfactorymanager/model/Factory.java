@@ -9,12 +9,20 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MapKey;
 import javax.persistence.OneToMany;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
+@NoArgsConstructor
+@Getter
+@Setter
 public class Factory {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Setter(AccessLevel.NONE)
   private Integer id;
 
   private String name;
@@ -23,34 +31,8 @@ public class Factory {
   @MapKey(name = "key")
   private Map<String, MachineGroup> machineGroups;
 
-  public Factory() {}
-
   public Factory(String name) {
     this.name = name;
     this.machineGroups = new HashMap<>();
-  }
-
-  public Integer getId() {
-    return id;
-  }
-
-  private void setId(int id) {
-    this.id = id;
-  }
-
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public Map<String, MachineGroup> getMachineGroups() {
-    return machineGroups;
-  }
-
-  public void setMachineGroups(Map<String, MachineGroup> machineGroups) {
-    this.machineGroups = machineGroups;
   }
 }
