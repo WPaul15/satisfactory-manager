@@ -1,5 +1,6 @@
 package com.wd40.satisfactorymanager.model;
 
+import com.wd40.satisfactorymanager.dto.change.MachineGroupChange;
 import java.util.HashMap;
 import java.util.Map;
 import javax.persistence.CascadeType;
@@ -34,5 +35,20 @@ public class Factory {
   public Factory(String name) {
     this.name = name;
     this.machineGroups = new HashMap<>();
+  }
+
+  public void updateMachineGroups(Map<String, MachineGroupChange> changes) {
+    changes.forEach(
+        (key, change) -> {
+          switch (change.getChangeOp()) {
+            case ADD:
+            case UPDATE:
+              machineGroups.put(key, change.getMachineGroup());
+              break;
+            case DELETE:
+              machineGroups.remove(key);
+              break;
+          }
+        });
   }
 }

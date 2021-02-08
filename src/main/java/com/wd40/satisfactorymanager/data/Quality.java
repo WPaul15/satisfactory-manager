@@ -6,9 +6,10 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public enum Quality {
-  IMPURE('i'),
-  NORMAL('n'),
-  PURE('p');
+  IMPURE("i"),
+  NORMAL("n"),
+  PURE("p"),
+  NONE("");
 
-  private final char key;
+  private final String key;
 }

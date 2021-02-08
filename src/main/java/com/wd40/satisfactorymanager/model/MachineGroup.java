@@ -26,10 +26,17 @@ public class MachineGroup {
   private String recipeKey;
   private int count;
   private int clockSpeed = 100;
-  private Quality quality;
+  private Quality quality = Quality.NONE;
 
-  @JsonIgnore
-  private String key;
+  @JsonIgnore private String key;
+
+  public MachineGroup(String machineKey, String recipeKey, int count, int clockSpeed) {
+    this.machineKey = machineKey;
+    this.recipeKey = recipeKey;
+    this.count = count;
+    this.clockSpeed = clockSpeed;
+    this.key = getKey();
+  }
 
   public MachineGroup(
       String machineKey, String recipeKey, int count, int clockSpeed, Quality quality) {
@@ -39,10 +46,6 @@ public class MachineGroup {
     this.clockSpeed = clockSpeed;
     this.quality = quality;
     this.key = getKey();
-  }
-
-  public void updateCount(int countChange) {
-    this.count += countChange;
   }
 
   public String getKey() {

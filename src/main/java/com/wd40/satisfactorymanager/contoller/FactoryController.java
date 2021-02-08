@@ -1,7 +1,9 @@
 package com.wd40.satisfactorymanager.contoller;
 
-import com.wd40.satisfactorymanager.model.Factory;
+import com.wd40.satisfactorymanager.dto.FactoryDto;
+import com.wd40.satisfactorymanager.dto.FactoryUpdateDto;
 import com.wd40.satisfactorymanager.service.FactoryService;
+import com.wd40.satisfactorymanager.util.FactoryMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -19,35 +21,23 @@ public class FactoryController {
   }
 
   @GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-  public Factory getFactoryById(@PathVariable Integer id) {
-    return factoryService.getFactoryById(id);
+  public FactoryDto getFactoryById(@PathVariable Integer id) {
+    return FactoryMapper.INSTANCE.toDto(factoryService.getFactoryById(id));
   }
 
   @PostMapping(path = "/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
   @ResponseStatus(HttpStatus.CREATED)
-  public Factory createNewFactory(@PathVariable("name") String name) {
-    return factoryService.createNewFactory(name);
+  public FactoryDto createNewFactory(@PathVariable("name") String name) {
+    return FactoryMapper.INSTANCE.toDto(factoryService.createNewFactory(name));
   }
 
-  @PostMapping(path = "/add", produces = MediaType.APPLICATION_JSON_VALUE)
-  public Factory addMachine() {
-    return factoryService.addMachine(
-        new Factory("newFactory"), "Smelter", "Iron Ingot", 100, 2, "");
-  }
-
-  @DeleteMapping(path = "/remove", produces = MediaType.APPLICATION_JSON_VALUE)
-  public Factory removeMachine() {
-    Factory removeTestFactory = new Factory("removeTestFactory");
-    factoryService.addMachine(removeTestFactory, "Smelter", "Iron Ingot", 100, 5, "");
-
-    return factoryService.removeMachine(removeTestFactory, "100", 10);
-  }
-
-  @PutMapping(path = "/edit", produces = MediaType.APPLICATION_JSON_VALUE)
-  public Factory editMachine() {
-    Factory editTestFactory = new Factory("editTestFactory");
-    factoryService.addMachine(editTestFactory, "Smelter", "Iron Ingot", 105, 3, "");
-
-    return factoryService.editMachine(editTestFactory, "105", "Iron Ingot", 100, "");
+  @PutMapping(
+      path = "/{id}",
+      produces = MediaType.APPLICATION_JSON_VALUE,
+      consumes = MediaType.APPLICATION_JSON_VALUE)
+  public FactoryDto updateFactory(
+      @RequestBody FactoryUpdateDto updateDto, @PathVariable("id") Integer id) {
+    return FactoryMapper.INSTANCE.toDto(
+        factoryService.updateFactory(id, updateDto.getName(), updateDto.getChanges()));
   }
 }
