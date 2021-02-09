@@ -26,13 +26,19 @@ public class FactoryService {
   }
 
   public Factory updateFactory(Integer id, String name, Map<String, MachineGroupChange> changes) {
+    if (name == null && (changes == null || changes.isEmpty())) {
+      return getFactoryById(id);
+    }
+
     Factory factory = factoryRepository.getOne(id);
 
-    if (!factory.getName().equals(name)) {
+    if (name != null && !factory.getName().equals(name)) {
       factory.setName(name);
     }
 
-    factory.updateMachineGroups(changes);
+    if (changes != null && !changes.isEmpty()) {
+      factory.updateMachineGroups(changes);
+    }
 
     return factoryRepository.save(factory);
   }

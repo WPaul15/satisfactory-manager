@@ -74,24 +74,6 @@ public class FactoryServiceTest {
   }
 
   @Test
-  void shouldUpdateFactoryName() {
-    int id = 1;
-    String oldName = "Test Factory";
-    String newName = "Test Factory 2";
-
-    Factory oldFactory = new Factory(oldName);
-    Factory newFactory = new Factory(newName);
-
-    Mockito.when(factoryRepository.getOne(id)).thenReturn(oldFactory);
-    Mockito.when(factoryRepository.save(any(Factory.class))).thenReturn(newFactory);
-
-    Factory result = factoryService.updateFactory(id, newName, new HashMap<>());
-
-    assertThat(result).isNotNull();
-    assertThat(result.getName()).isEqualTo(newName);
-  }
-
-  @Test
   void shouldAddMachineGroupToFactory() {
     int id = 1;
     String name = "Test Factory";
@@ -112,6 +94,39 @@ public class FactoryServiceTest {
     assertThat(result).isNotNull();
     assertThat(result.getMachineGroups().size()).isEqualTo(1);
     assertThat(result.getMachineGroups().containsKey(key)).isTrue();
+  }
+
+  @Test
+  void shouldNotFailWhenNoChangesPresent() {
+    int id = 1;
+    String name = "Test Factory";
+    Factory factory = new Factory(name);
+
+    Mockito.when(factoryRepository.findById(id)).thenReturn(Optional.of(factory));
+
+    Factory result = factoryService.updateFactory(id, null, null);
+
+    assertThat(result).isNotNull();
+    assertThat(result.getName()).isEqualTo(name);
+    assertThat(result.getMachineGroups()).isEmpty();
+  }
+
+  @Test
+  void shouldUpdateFactoryName() {
+    int id = 1;
+    String oldName = "Test Factory";
+    String newName = "Test Factory 2";
+
+    Factory oldFactory = new Factory(oldName);
+    Factory newFactory = new Factory(newName);
+
+    Mockito.when(factoryRepository.getOne(id)).thenReturn(oldFactory);
+    Mockito.when(factoryRepository.save(any(Factory.class))).thenReturn(newFactory);
+
+    Factory result = factoryService.updateFactory(id, newName, new HashMap<>());
+
+    assertThat(result).isNotNull();
+    assertThat(result.getName()).isEqualTo(newName);
   }
 
   @Test
