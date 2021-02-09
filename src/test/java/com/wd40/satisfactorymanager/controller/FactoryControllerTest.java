@@ -10,9 +10,9 @@ import static org.mockito.ArgumentMatchers.anyString;
 
 import com.wd40.satisfactorymanager.contoller.FactoryController;
 import com.wd40.satisfactorymanager.data.Quality;
-import com.wd40.satisfactorymanager.dto.FactoryUpdateDto;
-import com.wd40.satisfactorymanager.dto.change.ChangeOp;
-import com.wd40.satisfactorymanager.dto.change.MachineGroupChange;
+import com.wd40.satisfactorymanager.dto.request.FactoryUpdateDto;
+import com.wd40.satisfactorymanager.dto.request.change.ChangeOp;
+import com.wd40.satisfactorymanager.dto.request.change.MachineGroupChange;
 import com.wd40.satisfactorymanager.model.Factory;
 import com.wd40.satisfactorymanager.model.MachineGroup;
 import com.wd40.satisfactorymanager.service.FactoryService;

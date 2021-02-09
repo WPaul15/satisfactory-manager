@@ -1,7 +1,7 @@
 package com.wd40.satisfactorymanager.contoller;
 
-import com.wd40.satisfactorymanager.dto.FactoryDto;
-import com.wd40.satisfactorymanager.dto.FactoryUpdateDto;
+import com.wd40.satisfactorymanager.dto.request.FactoryUpdateDto;
+import com.wd40.satisfactorymanager.dto.response.FactoryDto;
 import com.wd40.satisfactorymanager.service.FactoryService;
 import com.wd40.satisfactorymanager.util.FactoryMapper;
 import org.springframework.beans.factory.annotation.Autowired;

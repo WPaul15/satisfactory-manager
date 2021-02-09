@@ -1,6 +1,6 @@
 package com.wd40.satisfactorymanager.model;
 
-import com.wd40.satisfactorymanager.dto.change.MachineGroupChange;
+import com.wd40.satisfactorymanager.dto.request.change.MachineGroupChange;
 import java.util.HashMap;
 import java.util.Map;
 import javax.persistence.CascadeType;

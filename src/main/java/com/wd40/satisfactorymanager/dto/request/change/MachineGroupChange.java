@@ -1,4 +1,4 @@
-package com.wd40.satisfactorymanager.dto.change;
+package com.wd40.satisfactorymanager.dto.request.change;
 
 import com.wd40.satisfactorymanager.model.MachineGroup;
 import lombok.Value;

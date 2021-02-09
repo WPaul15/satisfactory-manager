@@ -1,4 +1,4 @@
-package com.wd40.satisfactorymanager.dto;
+package com.wd40.satisfactorymanager.dto.response;
 
 import com.wd40.satisfactorymanager.model.MachineGroup;
 import java.util.Map;

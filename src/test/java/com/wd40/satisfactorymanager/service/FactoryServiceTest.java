@@ -6,8 +6,8 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
 
 import com.wd40.satisfactorymanager.data.Quality;
-import com.wd40.satisfactorymanager.dto.change.ChangeOp;
-import com.wd40.satisfactorymanager.dto.change.MachineGroupChange;
+import com.wd40.satisfactorymanager.dto.request.change.ChangeOp;
+import com.wd40.satisfactorymanager.dto.request.change.MachineGroupChange;
 import com.wd40.satisfactorymanager.model.Factory;
 import com.wd40.satisfactorymanager.model.MachineGroup;
 import com.wd40.satisfactorymanager.repository.FactoryRepository;

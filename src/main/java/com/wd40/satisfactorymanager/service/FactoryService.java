@@ -1,6 +1,6 @@
 package com.wd40.satisfactorymanager.service;
 
-import com.wd40.satisfactorymanager.dto.change.MachineGroupChange;
+import com.wd40.satisfactorymanager.dto.request.change.MachineGroupChange;
 import com.wd40.satisfactorymanager.model.Factory;
 import com.wd40.satisfactorymanager.repository.FactoryRepository;
 import java.util.Map;

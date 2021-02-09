@@ -1,6 +1,6 @@
-package com.wd40.satisfactorymanager.dto;
+package com.wd40.satisfactorymanager.dto.request;
 
-import com.wd40.satisfactorymanager.dto.change.MachineGroupChange;
+import com.wd40.satisfactorymanager.dto.request.change.MachineGroupChange;
 import java.util.Map;
 import lombok.Value;
 
