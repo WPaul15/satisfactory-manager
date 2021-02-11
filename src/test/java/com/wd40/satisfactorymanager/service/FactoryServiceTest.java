@@ -50,7 +50,7 @@ public class FactoryServiceTest {
   }
 
   @Test
-  void shouldThrowExceptionWithInvalidId() {
+  void shouldThrowExceptionWhenFindingWithInvalidId() {
     int id = -1;
 
     Mockito.when(factoryRepository.findById(id)).thenReturn(Optional.empty());
@@ -74,6 +74,21 @@ public class FactoryServiceTest {
   }
 
   @Test
+  void shouldNotFailUpdateWhenNoChangesPresent() {
+    int id = 1;
+    String name = "Test Factory";
+    Factory factory = new Factory(name);
+
+    Mockito.when(factoryRepository.findById(id)).thenReturn(Optional.of(factory));
+
+    Factory result = factoryService.updateFactory(id, null, null);
+
+    assertThat(result).isNotNull();
+    assertThat(result.getName()).isEqualTo(name);
+    assertThat(result.getMachineGroups()).isEmpty();
+  }
+
+  @Test
   void shouldAddMachineGroupToFactory() {
     int id = 1;
     String name = "Test Factory";
@@ -89,26 +104,14 @@ public class FactoryServiceTest {
 
     Factory result =
         factoryService.updateFactory(
-            id, name, Map.of(key, new MachineGroupChange(machineGroup, ChangeOp.ADD)));
+            id, name, Map.of(key, new MachineGroupChange("", machineGroup, ChangeOp.ADD)));
 
     assertThat(result).isNotNull();
-    assertThat(result.getMachineGroups().size()).isEqualTo(1);
-    assertThat(result.getMachineGroups().containsKey(key)).isTrue();
-  }
 
-  @Test
-  void shouldNotFailWhenNoChangesPresent() {
-    int id = 1;
-    String name = "Test Factory";
-    Factory factory = new Factory(name);
+    Map<String, MachineGroup> resultMachineGroups = result.getMachineGroups();
 
-    Mockito.when(factoryRepository.findById(id)).thenReturn(Optional.of(factory));
-
-    Factory result = factoryService.updateFactory(id, null, null);
-
-    assertThat(result).isNotNull();
-    assertThat(result.getName()).isEqualTo(name);
-    assertThat(result.getMachineGroups()).isEmpty();
+    assertThat(resultMachineGroups.size()).isEqualTo(1);
+    assertThat(resultMachineGroups.containsKey(key)).isTrue();
   }
 
   @Test
@@ -127,38 +130,87 @@ public class FactoryServiceTest {
 
     assertThat(result).isNotNull();
     assertThat(result.getName()).isEqualTo(newName);
+    assertThat(result.getMachineGroups()).isEmpty();
   }
 
   @Test
-  void shouldUpdateExistingMachineGroupInFactory() {
+  void shouldUpdateExistingMachineGroupRecipeInFactory() {
     int id = 1;
     String name = "Test Factory";
-    int newCount = 4;
+    String newRecipe = "cpr";
 
     MachineGroup oldMachineGroup = new MachineGroup("m1", "irn", 1, 100, Quality.NORMAL);
-    MachineGroup newMachineGroup = new MachineGroup("m1", "irn", newCount, 100, Quality.NORMAL);
-    String key = oldMachineGroup.getKey();
+    MachineGroup newMachineGroup = new MachineGroup("m1", newRecipe, 1, 100, Quality.NORMAL);
+
+    String oldKey = oldMachineGroup.getKey();
+    String newKey = newMachineGroup.getKey();
 
     Map<String, MachineGroup> machineGroups = new HashMap<>();
-    machineGroups.put(key, oldMachineGroup);
+    machineGroups.put(oldKey, oldMachineGroup);
 
     Factory oldFactory = new Factory(name);
     oldFactory.setMachineGroups(machineGroups);
 
     Factory newFactory = new Factory(name);
-    newFactory.setMachineGroups(Map.of(key, newMachineGroup));
+    newFactory.setMachineGroups(Map.of(newKey, newMachineGroup));
 
     Mockito.when(factoryRepository.getOne(id)).thenReturn(oldFactory);
     Mockito.when(factoryRepository.save(any(Factory.class))).thenReturn(newFactory);
 
     Factory result =
         factoryService.updateFactory(
-            id, name, Map.of(key, new MachineGroupChange(newMachineGroup, ChangeOp.UPDATE)));
+            id,
+            name,
+            Map.of(newKey, new MachineGroupChange(oldKey, newMachineGroup, ChangeOp.UPDATE)));
 
     assertThat(result).isNotNull();
-    assertThat(result.getMachineGroups().size()).isEqualTo(1);
-    assertThat(result.getMachineGroups().containsKey(key)).isTrue();
-    assertThat(result.getMachineGroups().get(key).getCount()).isEqualTo(newCount);
+
+    Map<String, MachineGroup> resultMachineGroups = result.getMachineGroups();
+
+    assertThat(resultMachineGroups.size()).isEqualTo(1);
+    assertThat(resultMachineGroups.containsKey(oldKey)).isFalse();
+    assertThat(resultMachineGroups.containsKey(newKey)).isTrue();
+    assertThat(resultMachineGroups.get(newKey).getRecipeKey()).isEqualTo(newRecipe);
+  }
+
+  @Test
+  void shouldUpdateExistingMachineGroupCountInFactory() {
+    int id = 1;
+    String name = "Test Factory";
+    int newCount = 4;
+
+    MachineGroup oldMachineGroup = new MachineGroup("m1", "irn", 1, 100, Quality.NORMAL);
+    MachineGroup newMachineGroup = new MachineGroup("m1", "irn", newCount, 100, Quality.NORMAL);
+
+    String oldKey = oldMachineGroup.getKey();
+    String newKey = newMachineGroup.getKey();
+
+    Map<String, MachineGroup> machineGroups = new HashMap<>();
+    machineGroups.put(oldKey, oldMachineGroup);
+
+    Factory oldFactory = new Factory(name);
+    oldFactory.setMachineGroups(machineGroups);
+
+    Factory newFactory = new Factory(name);
+    newFactory.setMachineGroups(Map.of(newKey, newMachineGroup));
+
+    Mockito.when(factoryRepository.getOne(id)).thenReturn(oldFactory);
+    Mockito.when(factoryRepository.save(any(Factory.class))).thenReturn(newFactory);
+
+    Factory result =
+        factoryService.updateFactory(
+            id,
+            name,
+            Map.of(newKey, new MachineGroupChange(oldKey, newMachineGroup, ChangeOp.UPDATE)));
+
+    assertThat(result).isNotNull();
+    assertThat(oldKey).isEqualTo(newKey);
+
+    Map<String, MachineGroup> resultMachineGroups = result.getMachineGroups();
+
+    assertThat(resultMachineGroups.size()).isEqualTo(1);
+    assertThat(resultMachineGroups.containsKey(newKey)).isTrue();
+    assertThat(resultMachineGroups.get(newKey).getCount()).isEqualTo(newCount);
   }
 
   @Test
@@ -181,7 +233,7 @@ public class FactoryServiceTest {
 
     Factory result =
         factoryService.updateFactory(
-            id, name, Map.of(key, new MachineGroupChange(machineGroup, ChangeOp.DELETE)));
+            id, name, Map.of(key, new MachineGroupChange(key, machineGroup, ChangeOp.DELETE)));
 
     assertThat(result).isNotNull();
     assertThat(result.getMachineGroups()).isEmpty();
@@ -204,6 +256,8 @@ public class FactoryServiceTest {
         .isThrownBy(
             () ->
                 factoryService.updateFactory(
-                    id, name, Map.of(key, new MachineGroupChange(machineGroup, ChangeOp.DELETE))));
+                    id,
+                    name,
+                    Map.of(key, new MachineGroupChange("", machineGroup, ChangeOp.DELETE))));
   }
 }

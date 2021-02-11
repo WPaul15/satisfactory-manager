@@ -6,6 +6,7 @@ import lombok.Value;
 @Value
 public class MachineGroupChange {
 
+  String oldKey;
   MachineGroup machineGroup;
   ChangeOp changeOp;
 }

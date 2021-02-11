@@ -87,7 +87,7 @@ public class FactoryControllerTest {
     MachineGroup machineGroup = new MachineGroup("m1", "irn", 2, 100, Quality.NORMAL);
     String key = machineGroup.getKey();
 
-    changes.put(key, new MachineGroupChange(machineGroup, ChangeOp.ADD));
+    changes.put(key, new MachineGroupChange("", machineGroup, ChangeOp.ADD));
 
     Factory updatedFactory = new Factory(name);
     updatedFactory.setMachineGroups(Map.of(key, machineGroup));

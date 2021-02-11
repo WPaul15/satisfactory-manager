@@ -51,8 +51,15 @@ public class FactoryService {
         (key, change) -> {
           switch (change.getChangeOp()) {
             case ADD:
-            case UPDATE:
               machineGroups.put(key, change.getMachineGroup());
+              break;
+            case UPDATE:
+              if (change.getOldKey() != null && !change.getOldKey().isBlank()) {
+                if (!change.getOldKey().equals(key)) {
+                  machineGroups.remove(change.getOldKey());
+                }
+                machineGroups.put(key, change.getMachineGroup());
+              }
               break;
             case DELETE:
               machineGroups.remove(key);
