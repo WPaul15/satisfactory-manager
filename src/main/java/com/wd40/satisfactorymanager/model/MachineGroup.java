@@ -1,67 +1,54 @@
 package com.wd40.satisfactorymanager.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.wd40.satisfactorymanager.data.Quality;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
+@NoArgsConstructor
+@Getter
+@Setter
 public class MachineGroup {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Setter(AccessLevel.NONE)
   private Integer id;
 
+  private String machineKey;
+  private String recipeKey;
   private int count;
   private int clockSpeed = 100;
-  // TODO: Add recipes
-  private String recipe;
-  private String machineType;
+  private Quality quality = Quality.NONE;
+
   @JsonIgnore private String key;
 
-  public MachineGroup() {}
-
-  public MachineGroup(String machineType, int count, int clockSpeed, String recipe) {
+  public MachineGroup(String machineKey, String recipeKey, int count, int clockSpeed) {
+    this.machineKey = machineKey;
+    this.recipeKey = recipeKey;
     this.count = count;
     this.clockSpeed = clockSpeed;
-    this.recipe = recipe;
-    this.key = generateKey();
+    this.key = getKey();
   }
 
-  public int getCount() {
-    return count;
-  }
-
-  public void setCount(int count) {
+  public MachineGroup(
+      String machineKey, String recipeKey, int count, int clockSpeed, Quality quality) {
+    this.machineKey = machineKey;
+    this.recipeKey = recipeKey;
     this.count = count;
-  }
-
-  public int getClockSpeed() {
-    return clockSpeed;
-  }
-
-  public void setClockSpeed(int clockSpeed) {
     this.clockSpeed = clockSpeed;
-  }
-
-  public void updateCount(int countChange) {
-    this.count += countChange;
-  }
-
-  public String getMachineType() {
-    return machineType;
+    this.quality = quality;
+    this.key = getKey();
   }
 
   public String getKey() {
-    return key;
-  }
-
-  public void setKey(String key) {
-    this.key = key;
-  }
-
-  private String generateKey() {
-    return "test";
+    return machineKey + quality.getKey() + recipeKey + String.format("%03d", clockSpeed);
   }
 }

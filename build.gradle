@@ -1,10 +1,10 @@
 plugins {
-	id 'org.springframework.boot' version '2.4.1'
-	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
-	id 'com.diffplug.spotless' version '5.8.2'
-	id 'java'
-	id 'idea'
-	id 'io.freefair.lombok' version '5.3.0'
+  id 'org.springframework.boot' version '2.4.1'
+  id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+  id 'com.diffplug.spotless' version '5.8.2'
+  id 'java'
+  id 'idea'
+  id 'io.freefair.lombok' version '5.3.0'
 }
 
 group = 'com.wd40'
@@ -12,34 +12,53 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 repositories {
-	mavenCentral()
+  mavenCentral()
+}
+
+ext {
+  mapStructVersion = '1.4.2.Final'
+  lombokVersion = '1.18.18'
+  lombokMapStructBindingVersion = '0.2.0'
+  restAssuredVersion = '4.3.3'
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'com.h2database:h2'
+  implementation 'org.springframework.boot:spring-boot-starter-actuator'
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+  implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+  implementation 'com.h2database:h2'
+  implementation "org.mapstruct:mapstruct:$mapStructVersion"
+  implementation "org.projectlombok:lombok-mapstruct-binding:$lombokMapStructBindingVersion"
 
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
+  testImplementation "io.rest-assured:rest-assured-common:$restAssuredVersion"
+  testImplementation "io.rest-assured:xml-path:$restAssuredVersion"
+  testImplementation "io.rest-assured:spring-mock-mvc:$restAssuredVersion"
+
+  annotationProcessor(
+      "org.mapstruct:mapstruct-processor:$mapStructVersion",
+      "org.projectlombok:lombok:$lombokVersion",
+      "org.projectlombok:lombok-mapstruct-binding:$lombokMapStructBindingVersion")
 }
 
 lombok {
-	generateLombokConfig.enabled = false
+  generateLombokConfig.enabled = false
 }
 
 spotless {
-	java {
-		target 'src/*/java/**/*.java'
+  java {
+    target 'src/*/java/**/*.java'
 
-		importOrder()
-		removeUnusedImports()
-		googleJavaFormat()
-	}
+    importOrder()
+    removeUnusedImports()
+    googleJavaFormat()
+  }
 }
 
-compileJava.dependsOn spotlessJavaApply
+compileJava {
+  dependsOn spotlessJavaApply
+}
 
 test {
-	useJUnitPlatform()
+  useJUnitPlatform()
 }
